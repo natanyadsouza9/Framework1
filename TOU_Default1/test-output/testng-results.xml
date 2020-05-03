@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Admin has been entered in UsernameTextBox]]>
+    </line>
+    <line>
+      <![CDATA[admin123 has been entered in PasswordTextbox]]>
+    </line>
+    <line>
+      <![CDATA[LoginButton has been clicked]]>
+    </line>
+    <line>
+      <![CDATA[Mouse hovered on element PIM_Module]]>
+    </line>
+    <line>
+      <![CDATA[employeeList_SubMenu has been clicked]]>
+    </line>
+    <line>
+      <![CDATA[Employee_ID has been clicked]]>
+    </line>
+    <line>
+      <![CDATA[EditButton has been clicked]]>
+    </line>
+    <line>
+      <![CDATA[Giana has been entered in firstNameTextBox]]>
+    </line>
+    <line>
+      <![CDATA[SaveButton has been clicked]]>
+    </line>
+    <line>
+      <![CDATA[Welcome_Menu has been clicked]]>
+    </line>
+    <line>
+      <![CDATA[Logout_Button has not been clicked ]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="37819" started-at="2020-05-03T22:10:49Z" finished-at="2020-05-03T22:11:26Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="37819" started-at="2020-05-03T22:10:49Z" finished-at="2020-05-03T22:11:26Z">
+      <class name="scripts.TC1_EditUserDetails">
+        <test-method status="PASS" signature="handleTestScriptName(java.lang.reflect.Method)[pri:0, instance:scripts.TC1_EditUserDetails@6adede5]" name="handleTestScriptName" is-config="true" duration-ms="21" started-at="2020-05-03T15:10:49Z" finished-at="2020-05-03T15:10:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void scripts.TC1_EditUserDetails.editEmployeeDetails() throws java.lang.InterruptedException,org.apache.poi.EncryptedDocumentException,org.apache.poi.openxml4j.exceptions.InvalidFormatException,java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handleTestScriptName -->
+        <test-method status="PASS" signature="precondition()[pri:0, instance:scripts.TC1_EditUserDetails@6adede5]" name="precondition" is-config="true" duration-ms="12946" started-at="2020-05-03T15:10:49Z" finished-at="2020-05-03T15:11:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method status="PASS" signature="editEmployeeDetails()[pri:0, instance:scripts.TC1_EditUserDetails@6adede5]" name="editEmployeeDetails" duration-ms="24148" started-at="2020-05-03T15:11:02Z" finished-at="2020-05-03T15:11:26Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Admin has been entered in UsernameTextBox]]>
+            </line>
+            <line>
+              <![CDATA[admin123 has been entered in PasswordTextbox]]>
+            </line>
+            <line>
+              <![CDATA[LoginButton has been clicked]]>
+            </line>
+            <line>
+              <![CDATA[Mouse hovered on element PIM_Module]]>
+            </line>
+            <line>
+              <![CDATA[employeeList_SubMenu has been clicked]]>
+            </line>
+            <line>
+              <![CDATA[Employee_ID has been clicked]]>
+            </line>
+            <line>
+              <![CDATA[EditButton has been clicked]]>
+            </line>
+            <line>
+              <![CDATA[Giana has been entered in firstNameTextBox]]>
+            </line>
+            <line>
+              <![CDATA[SaveButton has been clicked]]>
+            </line>
+            <line>
+              <![CDATA[Welcome_Menu has been clicked]]>
+            </line>
+            <line>
+              <![CDATA[Logout_Button has not been clicked ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- editEmployeeDetails -->
+        <test-method status="PASS" signature="postcondition()[pri:0, instance:scripts.TC1_EditUserDetails@6adede5]" name="postcondition" is-config="true" duration-ms="674" started-at="2020-05-03T15:11:26Z" finished-at="2020-05-03T15:11:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postcondition -->
+      </class> <!-- scripts.TC1_EditUserDetails -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
