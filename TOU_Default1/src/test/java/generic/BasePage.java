@@ -2,6 +2,7 @@ package generic;
 
 import java.util.concurrent.TimeUnit;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -29,6 +30,7 @@ public class BasePage {
 		
 		catch(Exception e){
 			Reporter.log(PageName+" is not displayed ",true);
+			Assert.fail();
 
 		}
 	}
@@ -44,6 +46,7 @@ public class BasePage {
 		
 		catch(Exception e){
 			Reporter.log(text+" has not been entered in "+elementName,false);
+			Assert.fail();
 
 		}
 	}
@@ -57,6 +60,7 @@ public class BasePage {
 		
 		catch(Exception e){
 			Reporter.log(elementName+" has not been clicked ",false);
+			Assert.fail();
 
 		}
 	}
@@ -71,6 +75,7 @@ public class BasePage {
 		
 		catch(Exception e){
 			Reporter.log("element  is  not present ",true);
+			Assert.fail();
 
 		}
 	}

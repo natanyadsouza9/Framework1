@@ -13,7 +13,8 @@ public class Excel extends BaseTest {
 	
 	public static String readData(String testdata) throws EncryptedDocumentException, InvalidFormatException, IOException{
 		
-		File f=new File("C:\\TOU_Framework\\TOU_Default1\\data\\TestData.xlsx");
+		String path=System.getProperty("user.dir")+"\\data\\TestData.xlsx";
+		File f=new File(path);
 		Workbook wb=WorkbookFactory.create(f);
 		System.out.println("Excel methid:Test case being run is "+TestScriptName);
 		//String testData=wb.getSheet(Sheet).getRow(rowNo).getCell(columnNo).toString();

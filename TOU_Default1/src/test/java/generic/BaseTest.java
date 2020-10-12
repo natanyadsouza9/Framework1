@@ -37,7 +37,7 @@ public class BaseTest implements AutoConst {
 	
 	@AfterMethod
 	public void postcondition(){
-		driver.close();
+		//driver.close();
 	}
 
 }

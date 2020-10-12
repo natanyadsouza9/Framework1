@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
@@ -21,6 +22,7 @@ public class GenericUtils extends BaseTest {
 		
 		catch(Exception e){
 			Reporter.log("Mouse was not hovered on element "+elementName,true);
+			Assert.fail();
 
 		}
 	
@@ -36,6 +38,8 @@ public class GenericUtils extends BaseTest {
 		
 		catch(Exception e){
 			Reporter.log("Element was not dragged and dropped "+src,true);
+			Assert.fail();
+
 		}
 	
 }
@@ -50,6 +54,8 @@ public class GenericUtils extends BaseTest {
 		
 		catch(Exception e){
 			Reporter.log("Dropdown value not selected at index"+index,true);
+			Assert.fail();
+
 		}
 	
 }
@@ -93,6 +99,8 @@ public static void sortListBox(WebElement element){
 		
 		catch(Exception e){
 			Reporter.log("exception",true);
+			Assert.fail();
+
 		}
 }
 	
