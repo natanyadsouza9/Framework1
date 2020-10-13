@@ -35,6 +35,7 @@ public class LoginPage extends BasePage {
 	@FindBy(xpath="//select[@id='empsearch_job_title']")
 	private WebElement jobTitle_ListBox;
 	
+	BasePage p=new BasePage(driver);
 	public LoginPage(WebDriver driver){
 		
 		super(driver);
@@ -42,14 +43,14 @@ public class LoginPage extends BasePage {
 		
 	}
 	
-	public void setUserName(String username){
+	public String setUserName(String username){
 		
-		BasePage.enterText(username, userName,"UsernameTextBox");
+		return p.enterText(username, userName,"UsernameTextBox");
 	}
 	
 public void setPassword(String pwd){
 		
-	BasePage.enterText(pwd, password,"PasswordTextbox");
+	p.enterText(pwd, password,"PasswordTextbox");
 	}
 
 public void clickLoginButton(){
@@ -83,7 +84,7 @@ public void clickEditButton(){
 public void editFirstName(String name){
 	
 	//firstName.clear();
-	BasePage.enterText(name, firstName, "firstNameTextBox");
+	p.enterText(name, firstName, "firstNameTextBox");
 	
 }
 

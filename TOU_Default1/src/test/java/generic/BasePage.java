@@ -11,7 +11,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 
-public class BasePage {
+import com.aventstack.extentreports.Status;
+
+public class BasePage extends BaseTest {
 
 	public static WebDriver driver;
 	
@@ -35,20 +37,26 @@ public class BasePage {
 		}
 	}
 	
-	public static void enterText(String text,WebElement element,String elementName){
+	public  String enterText(String text,WebElement element,String elementName){
 		
+		String text1;
 		try{
 		//Thread.sleep(5000);	
 		element.clear();
 		element.sendKeys(text);
+		 text1=text+" has been entered in "+elementName;
 		Reporter.log(text+" has been entered in "+elementName,true);
+		//logsGeneration(text+" has been entered in "+elementName);
+		
 		}
 		
 		catch(Exception e){
+			 text1=text+" has not been entered in "+elementName;
 			Reporter.log(text+" has not been entered in "+elementName,false);
 			Assert.fail();
 
 		}
+		return text1;
 	}
 	
 	public static void clickOnElement(WebElement element,String elementName){

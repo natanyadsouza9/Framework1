@@ -7,6 +7,8 @@ import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
+
 import generic.BasePage;
 import generic.BaseTest;
 import generic.Excel;
@@ -17,8 +19,12 @@ public class TC1_EditUserDetails extends BaseTest {
 	@Test(enabled=true)
 	public void editEmployeeDetails() throws InterruptedException, EncryptedDocumentException, InvalidFormatException, IOException{
 		
+		test = extent.createTest("editEmployeeDetails");
+		extentTest.set(test);
 		LoginPage l=new LoginPage(driver);
-		l.setUserName(Excel.readData("Username"));
+		//l.setUserName(Excel.readData("Username"));
+		extentTest.get().log(Status.INFO, l.setUserName(Excel.readData("Username")));
+
 		l.setPassword(Excel.readData("Password"));
 		l.clickLoginButton();
 		//BasePage.verifyTitle("OrangeHRM","HomePage");
@@ -39,6 +45,7 @@ public class TC1_EditUserDetails extends BaseTest {
 		//BasePage.verifyElementIsPresent();
 		Thread.sleep(7000);
         l.clickLogoutButton();
+
 		
 	}
 	
