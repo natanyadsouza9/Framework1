@@ -127,12 +127,11 @@
                   <a name="editEmployeeDetails">
                   </a> <!-- editEmployeeDetails -->
                   <span class="method-name">editEmployeeDetails</span>
-                  <div class="stack-trace"><b>"java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:92)
-	at org.junit.Assert.fail(Assert.java:100)
-	at generic.BasePage.clickOnElement(BasePage.java:71)
-	at pom.LoginPage.clickOnEmployeeId(LoginPage.java:75)
-	at scripts.TC1_EditUserDetails.editEmployeeDetails(TC1_EditUserDetails.java:36)
+                  <div class="stack-trace"><b>"java.lang.AssertionError: employeeList_SubMenu has not been clicked
+	at org.junit.Assert.fail(Assert.java:93)
+	at generic.BasePage.clickOnElement(BasePage.java:83)
+	at pom.LoginPage.clickEmployeeListSubMenu(LoginPage.java:69)
+	at scripts.TC1_EditUserDetails.editEmployeeDetails(TC1_EditUserDetails.java:32)
 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
 	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
@@ -140,12 +139,11 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
-... Removed 21 stack frames<br/> java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:92)
-	at org.junit.Assert.fail(Assert.java:100)
-	at generic.BasePage.clickOnElement(BasePage.java:71)
-	at pom.LoginPage.clickOnEmployeeId(LoginPage.java:75)
-	at scripts.TC1_EditUserDetails.editEmployeeDetails(TC1_EditUserDetails.java:36)
+... Removed 21 stack frames<br/> java.lang.AssertionError: employeeList_SubMenu has not been clicked
+	at org.junit.Assert.fail(Assert.java:93)
+	at generic.BasePage.clickOnElement(BasePage.java:83)
+	at pom.LoginPage.clickEmployeeListSubMenu(LoginPage.java:69)
+	at scripts.TC1_EditUserDetails.editEmployeeDetails(TC1_EditUserDetails.java:32)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -174,7 +172,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
-"</b><br>org.junit.Assert.fail(Assert.java:92)<br>org.junit.Assert.fail(Assert.java:100)<br>generic.BasePage.clickOnElement(BasePage.java:71)<br>pom.LoginPage.clickOnEmployeeId(LoginPage.java:75)<br>scripts.TC1_EditUserDetails.editEmployeeDetails(TC1_EditUserDetails.java:36)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)<br>org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)<br>org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)<br>
+"</b><br>org.junit.Assert.fail(Assert.java:93)<br>generic.BasePage.clickOnElement(BasePage.java:83)<br>pom.LoginPage.clickEmployeeListSubMenu(LoginPage.java:69)<br>scripts.TC1_EditUserDetails.editEmployeeDetails(TC1_EditUserDetails.java:32)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)<br>org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)<br>org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)<br>
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -236,12 +234,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'editEmployeeDetails')
 data.setCell(0, 2, 'scripts.TC1_EditUserDetails')
-data.setCell(0, 3, 10254);
+data.setCell(0, 3, 3059);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -259,8 +257,7 @@ return data;
                 <span class="reporter-method-output">admin123 has been entered in PasswordTextbox</span>
                 <span class="reporter-method-output">LoginButton has been clicked</span>
                 <span class="reporter-method-output">Mouse hovered on element PIM_Module</span>
-                <span class="reporter-method-output">employeeList_SubMenu has been clicked</span>
-                <span class="reporter-method-output">Employee_ID has not been clicked </span>
+                <span class="reporter-method-output">employeeList_SubMenu has not been clicked </span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -292,17 +289,17 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">precondition</span>
-                <span class="method-start">5 ms</span>
+                <span class="method-start">4 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">editEmployeeDetails</span>
-                <span class="method-start">7087 ms</span>
+                <span class="method-start">6875 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">postcondition</span>
-                <span class="method-start">17349 ms</span>
+                <span class="method-name">postcondition([TestResult name=editEmployeeDetails status=FAILURE method=TC1_EditUserDetails.editEmployeeDetails()...)</span>
+                <span class="method-start">9937 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -22,31 +22,39 @@ public class TC1_EditUserDetails extends BaseTest {
 		test = extent.createTest("editEmployeeDetails");
 		extentTest.set(test);
 		LoginPage l=new LoginPage(driver);
-		//l.setUserName(Excel.readData("Username"));
 		extentTest.get().log(Status.INFO, l.setUserName(Excel.readData("Username")));
 
-		l.setPassword(Excel.readData("Password"));
-		l.clickLoginButton();
+		extentTest.get().log(Status.INFO,l.setPassword(Excel.readData("Password")));
+		extentTest.get().log(Status.INFO,l.clickLoginButton());
+		extentTest.get().log(Status.INFO,l.hoverOnPIM());
+
 		//BasePage.verifyTitle("OrangeHRM","HomePage");
-		l.hoverOnPIM();
-		l.clickEmployeeListSubMenu();
+		extentTest.get().log(Status.INFO,l.clickEmployeeListSubMenu());
+
+/*		
 		//BasePage.verifyTitle("OrangeHRM","EmployeeList_Page");
 		Thread.sleep(5000);
 		//BasePage.verifyElementIsPresent();
-		l.clickOnEmployeeId();
+		extentTest.get().log(Status.INFO,l.clickOnEmployeeId());
+
 		//BasePage.verifyTitle("OrangeHRM","EmployeeDetailsPage");
 		Thread.sleep(5000);
-        l.clickEditButton();
-		//BasePage.verifyElementIsPresent();
-        l.editFirstName(Excel.readData("FirstName"));
-        l.clickSaveButton();
-		//BasePage.verifyElementIsPresent();
-        l.clickWelcomeMenu();
-		//BasePage.verifyElementIsPresent();
-		Thread.sleep(7000);
-        l.clickLogoutButton();
+		extentTest.get().log(Status.INFO,l.clickEditButton());
 
-		
+		//BasePage.verifyElementIsPresent();
+		extentTest.get().log(Status.INFO,l.editFirstName(Excel.readData("FirstName")));
+		extentTest.get().log(Status.INFO,l.clickSaveButton());
+
+        //l.clickSaveButton();
+		//BasePage.verifyElementIsPresent();
+		extentTest.get().log(Status.INFO,l.clickWelcomeMenu());
+		Thread.sleep(7000);
+
+		extentTest.get().log(Status.INFO,l.clickLogoutButton());
+
+		//BasePage.verifyElementIsPresent();
+
+		*/
 	}
 	
 	@Test(enabled=false)

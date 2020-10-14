@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Oct 13 15:35:27 MST 2020</td>
+<td>Started on:</td><td>Wed Oct 14 14:43:39 MST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>17 seconds (17995 ms)</td>
+<tr><td>Total time:</td><td>10 seconds (10300 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,24 +76,22 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='scripts.TC1_EditUserDetails.editEmployeeDetails()'><b>editEmployeeDetails</b><br>Test class: scripts.TC1_EditUserDetails<br/>
-<a href="#Output-922871524" onClick='toggleBox("Output-922871524", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1677840544" onClick='toggleBox("Output-1677840544", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-922871524" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-922871524">
+<a href="#Output-1677840544" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1677840544">
 Admin has been entered in UsernameTextBox<br/>
 admin123 has been entered in PasswordTextbox<br/>
 LoginButton has been clicked<br/>
 Mouse hovered on element PIM_Module<br/>
-employeeList_SubMenu has been clicked<br/>
-Employee_ID has not been clicked <br/>
+employeeList_SubMenu has not been clicked <br/>
 </div>
 </td>
-<td><div><pre>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:92)
-	at org.junit.Assert.fail(Assert.java:100)
-	at generic.BasePage.clickOnElement(BasePage.java:71)
-	at pom.LoginPage.clickOnEmployeeId(LoginPage.java:75)
-	at scripts.TC1_EditUserDetails.editEmployeeDetails(TC1_EditUserDetails.java:36)
+<td><div><pre>java.lang.AssertionError: employeeList_SubMenu has not been clicked
+	at org.junit.Assert.fail(Assert.java:93)
+	at generic.BasePage.clickOnElement(BasePage.java:83)
+	at pom.LoginPage.clickEmployeeListSubMenu(LoginPage.java:69)
+	at scripts.TC1_EditUserDetails.editEmployeeDetails(TC1_EditUserDetails.java:32)
 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
 	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
@@ -101,13 +99,12 @@ Employee_ID has not been clicked <br/>
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace922871524", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace922871524'><pre>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:92)
-	at org.junit.Assert.fail(Assert.java:100)
-	at generic.BasePage.clickOnElement(BasePage.java:71)
-	at pom.LoginPage.clickOnEmployeeId(LoginPage.java:75)
-	at scripts.TC1_EditUserDetails.editEmployeeDetails(TC1_EditUserDetails.java:36)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1677840544", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1677840544'><pre>java.lang.AssertionError: employeeList_SubMenu has not been clicked
+	at org.junit.Assert.fail(Assert.java:93)
+	at generic.BasePage.clickOnElement(BasePage.java:83)
+	at pom.LoginPage.clickEmployeeListSubMenu(LoginPage.java:69)
+	at scripts.TC1_EditUserDetails.editEmployeeDetails(TC1_EditUserDetails.java:32)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -137,8 +134,8 @@ Employee_ID has not been clicked <br/>
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
 </pre></div></td>
-<td>10</td>
-<td>scripts.TC1_EditUserDetails@740cae06</td></tr>
+<td>3</td>
+<td>scripts.TC1_EditUserDetails@26d9b808</td></tr>
 </table><p>
 </body>
 </html>

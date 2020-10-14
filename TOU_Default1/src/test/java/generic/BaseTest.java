@@ -5,6 +5,7 @@ import java.lang.reflect.Method;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -19,7 +20,7 @@ public class BaseTest implements AutoConst {
 	public ExtentTest test;
 	public ExtentReports extent=ExtentReporter.getReportObject();
 	public ThreadLocal<ExtentTest> extentTest =new ThreadLocal<ExtentTest>();
-	
+
 	@BeforeMethod
 	public void precondition() throws InterruptedException{
 
@@ -44,18 +45,24 @@ public class BaseTest implements AutoConst {
 	}
 
 	@AfterMethod
-	public void postcondition(){
+	public void postcondition(ITestResult result){
 		//driver.close();
+		if(result.getStatus() == ITestResult.SUCCESS)
+			extentTest.get().log(Status.PASS, "Test Case Passed successfully");
+
+		if(result.getStatus() == ITestResult.FAILURE)
+			extentTest.get().fail(result.getThrowable());
+
 		extent.flush();
 
 	}
 
 	public  void logsGeneration(String message)
-    {
-      
-       // test.log(Status.INFO,message);
+	{
+
+		// test.log(Status.INFO,message);
 		extentTest.get().log(Status.INFO, message);
-         
-       
-    }
+
+
+	}
 }

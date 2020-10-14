@@ -31,12 +31,12 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">18.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">10.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
 <tr><th colspan="4">Test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">scripts.TC1_EditUserDetails</td><td><a href="#m1"><b>editEmployeeDetails</b>  </a></td><td class="numi">1</td><td>1602628534611</td><td class="numi">10254</td></tr>
+<tr class="failedodd"><td rowspan="1">scripts.TC1_EditUserDetails</td><td><a href="#m1"><b>editEmployeeDetails</b>  </a></td><td class="numi">1</td><td>1602711826387</td><td class="numi">3059</td></tr>
 </table>
 <h1>Test</h1>
 <h2 id="m1">scripts.TC1_EditUserDetails:editEmployeeDetails</h2>
@@ -46,15 +46,13 @@ Admin has been entered in UsernameTextBox<br/>
 admin123 has been entered in PasswordTextbox<br/>
 LoginButton has been clicked<br/>
 Mouse hovered on element PIM_Module<br/>
-employeeList_SubMenu has been clicked<br/>
-Employee_ID has not been clicked <br/>
+employeeList_SubMenu has not been clicked <br/>
 <h3>Failure</h3>
-<p>null</p>
-org.junit.Assert.fail(Assert.java:92)
-<br/>at org.junit.Assert.fail(Assert.java:100)
-<br/>at generic.BasePage.clickOnElement(BasePage.java:71)
-<br/>at pom.LoginPage.clickOnEmployeeId(LoginPage.java:75)
-<br/>at scripts.TC1_EditUserDetails.editEmployeeDetails(TC1_EditUserDetails.java:36)
+<p>employeeList_SubMenu has not been clicked</p>
+org.junit.Assert.fail(Assert.java:93)
+<br/>at generic.BasePage.clickOnElement(BasePage.java:83)
+<br/>at pom.LoginPage.clickEmployeeListSubMenu(LoginPage.java:69)
+<br/>at scripts.TC1_EditUserDetails.editEmployeeDetails(TC1_EditUserDetails.java:32)
 <br/>29 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>

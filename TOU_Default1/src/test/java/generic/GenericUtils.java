@@ -12,52 +12,70 @@ import org.testng.Reporter;
 
 public class GenericUtils extends BaseTest {
 	
-	public static void mouseHover(WebElement element,String elementName){
+	public static String mouseHover(WebElement element,String elementName){
 		
+		String text1;
 		try{
 	Actions action=new Actions(driver);
 	action.moveToElement(element).perform();
+	text1="Mouse hovered on element "+elementName;
 		Reporter.log("Mouse hovered on element "+elementName,true);
 		}
 		
 		catch(Exception e){
+			text1="Mouse was not hovered on element "+elementName;
+
 			Reporter.log("Mouse was not hovered on element "+elementName,true);
-			Assert.fail();
+			Assert.fail(text1);
 
 		}
-	
+	return text1;
 }	
 	
-	public static void dragDrop(WebElement src,WebElement dest){
+	public static String dragDrop(WebElement src,WebElement dest){
 		
+		String text1;
+
 		try{
 	Actions action=new Actions(driver);
 	action.dragAndDrop(src, dest).build().perform();
+	text1="Element "+src+"has been dragged and dropped to "+dest;
 		Reporter.log("Element "+src+"has been dragged and dropped to "+dest,true);
 		}
 		
 		catch(Exception e){
+			
+			text1="Element was not dragged and dropped "+src;
+
 			Reporter.log("Element was not dragged and dropped "+src,true);
-			Assert.fail();
+			Assert.fail(text1);
 
 		}
+		
+		return text1;
 	
 }
 	
-	public static void selectDropDownValueByIndex(WebElement element,int index){
+	public static String selectDropDownValueByIndex(WebElement element,int index){
 		
+		String text1;
+
 		try{
+			
+			text1="Dropdown value selected at index"+index;
 	Select select=new Select(element);
 	select.selectByIndex(index);
 		Reporter.log("Dropdown value selected at index"+index,true);
 		}
 		
 		catch(Exception e){
+			
+			text1="Dropdown value not selected at index"+index;
 			Reporter.log("Dropdown value not selected at index"+index,true);
-			Assert.fail();
+			Assert.fail(text1);
 
 		}
-	
+	return text1;
 }
 	
 public static void sortListBox(WebElement element){

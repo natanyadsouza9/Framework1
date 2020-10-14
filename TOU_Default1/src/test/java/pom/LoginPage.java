@@ -18,7 +18,7 @@ public class LoginPage extends BasePage {
 	private WebElement loginButton;
 	@FindBy(linkText="PIM")
 	private WebElement pimModule;
-	@FindBy(xpath="//a[text()='Employee List']")
+	@FindBy(xpath="//a[text()='Employee List1']")
 	private WebElement employeeListSubMenu;
 	@FindBy(xpath="//a[contains(text(),'0006')]")
 	private WebElement employeeId;
@@ -48,62 +48,63 @@ public class LoginPage extends BasePage {
 		return p.enterText(username, userName,"UsernameTextBox");
 	}
 	
-public void setPassword(String pwd){
+public String setPassword(String pwd){
 		
-	p.enterText(pwd, password,"PasswordTextbox");
+	return p.enterText(pwd, password,"PasswordTextbox");
 	}
 
-public void clickLoginButton(){
+public String clickLoginButton(){
 	
-	BasePage.clickOnElement(loginButton, "LoginButton");
-	
-}
-
-public void hoverOnPIM(){
-	
-	GenericUtils.mouseHover(pimModule,"PIM_Module");
-}
-
-public void clickEmployeeListSubMenu(){
-	
-	BasePage.clickOnElement(employeeListSubMenu, "employeeList_SubMenu");
+	return BasePage.clickOnElement(loginButton, "LoginButton");
 	
 }
 
-public void clickOnEmployeeId(){
+public String hoverOnPIM(){
 	
-BasePage.clickOnElement(employeeId, "Employee_ID");
+	return GenericUtils.mouseHover(pimModule,"PIM_Module");
 }
 
-public void clickEditButton(){
+public String clickEmployeeListSubMenu(){
 	
-	BasePage.clickOnElement(editButton, "EditButton");
+	return BasePage.clickOnElement(employeeListSubMenu, "employeeList_SubMenu");
 	
 }
 
-public void editFirstName(String name){
+public String clickOnEmployeeId(){
+	
+return BasePage.clickOnElement(employeeId, "Employee_ID");
+}
+
+public String clickEditButton(){
+	
+	return BasePage.clickOnElement(editButton, "EditButton");
+	
+}
+
+public String editFirstName(String name){
 	
 	//firstName.clear();
-	p.enterText(name, firstName, "firstNameTextBox");
+	return p.enterText(name, firstName, "firstNameTextBox");
 	
 }
 
-public void clickSaveButton(){
+public String clickSaveButton(){
 	
-	BasePage.clickOnElement(saveButton, "SaveButton");
+	return BasePage.clickOnElement(saveButton, "SaveButton");
 	
 }
 
 
 
-public void clickWelcomeMenu(){
+public String clickWelcomeMenu(){
 	
-BasePage.clickOnElement(welcomeMenu, "Welcome_Menu");;	
+return BasePage.clickOnElement(welcomeMenu, "Welcome_Menu");
 }
 
-public void clickLogoutButton(){
+public String clickLogoutButton(){
 	
-BasePage.clickOnElement(logoutButton, "Logout_Button");;	
+return BasePage.clickOnElement(logoutButton, "Logout_Button");
+
 }
 
 public void verifyListBoxIsSorted(){

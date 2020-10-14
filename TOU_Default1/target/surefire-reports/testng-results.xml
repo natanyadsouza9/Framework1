@@ -14,18 +14,15 @@
       <![CDATA[Mouse hovered on element PIM_Module]]>
     </line>
     <line>
-      <![CDATA[employeeList_SubMenu has been clicked]]>
-    </line>
-    <line>
-      <![CDATA[Employee_ID has not been clicked ]]>
+      <![CDATA[employeeList_SubMenu has not been clicked ]]>
     </line>
   </reporter-output>
-  <suite started-at="2020-10-13T22:35:27Z" name="Suite" finished-at="2020-10-13T22:35:45Z" duration-ms="17995">
+  <suite started-at="2020-10-14T21:43:39Z" name="Suite" finished-at="2020-10-14T21:43:49Z" duration-ms="10300">
     <groups>
     </groups>
-    <test started-at="2020-10-13T22:35:27Z" name="Test" finished-at="2020-10-13T22:35:45Z" duration-ms="17995">
+    <test started-at="2020-10-14T21:43:39Z" name="Test" finished-at="2020-10-14T21:43:49Z" duration-ms="10300">
       <class name="scripts.TC1_EditUserDetails">
-        <test-method is-config="true" signature="handleTestScriptName(java.lang.reflect.Method)[pri:0, instance:scripts.TC1_EditUserDetails@740cae06]" started-at="2020-10-13T15:35:27Z" name="handleTestScriptName" finished-at="2020-10-13T15:35:27Z" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="handleTestScriptName(java.lang.reflect.Method)[pri:0, instance:scripts.TC1_EditUserDetails@26d9b808]" started-at="2020-10-14T14:43:39Z" name="handleTestScriptName" finished-at="2020-10-14T14:43:39Z" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -36,19 +33,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- handleTestScriptName -->
-        <test-method is-config="true" signature="precondition()[pri:0, instance:scripts.TC1_EditUserDetails@740cae06]" started-at="2020-10-13T15:35:27Z" name="precondition" finished-at="2020-10-13T15:35:34Z" duration-ms="7082" status="PASS">
+        <test-method is-config="true" signature="precondition()[pri:0, instance:scripts.TC1_EditUserDetails@26d9b808]" started-at="2020-10-14T14:43:39Z" name="precondition" finished-at="2020-10-14T14:43:46Z" duration-ms="6871" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- precondition -->
-        <test-method signature="editEmployeeDetails()[pri:0, instance:scripts.TC1_EditUserDetails@740cae06]" started-at="2020-10-13T15:35:34Z" name="editEmployeeDetails" finished-at="2020-10-13T15:35:44Z" duration-ms="10254" status="FAIL">
+        <test-method signature="editEmployeeDetails()[pri:0, instance:scripts.TC1_EditUserDetails@26d9b808]" started-at="2020-10-14T14:43:46Z" name="editEmployeeDetails" finished-at="2020-10-14T14:43:49Z" duration-ms="3059" status="FAIL">
           <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[employeeList_SubMenu has not been clicked]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:92)
-	at org.junit.Assert.fail(Assert.java:100)
-	at generic.BasePage.clickOnElement(BasePage.java:71)
-	at pom.LoginPage.clickOnEmployeeId(LoginPage.java:75)
-	at scripts.TC1_EditUserDetails.editEmployeeDetails(TC1_EditUserDetails.java:36)
+              <![CDATA[java.lang.AssertionError: employeeList_SubMenu has not been clicked
+	at org.junit.Assert.fail(Assert.java:93)
+	at generic.BasePage.clickOnElement(BasePage.java:83)
+	at pom.LoginPage.clickEmployeeListSubMenu(LoginPage.java:69)
+	at scripts.TC1_EditUserDetails.editEmployeeDetails(TC1_EditUserDetails.java:32)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -94,14 +93,18 @@
               <![CDATA[Mouse hovered on element PIM_Module]]>
             </line>
             <line>
-              <![CDATA[employeeList_SubMenu has been clicked]]>
-            </line>
-            <line>
-              <![CDATA[Employee_ID has not been clicked ]]>
+              <![CDATA[employeeList_SubMenu has not been clicked ]]>
             </line>
           </reporter-output>
         </test-method> <!-- editEmployeeDetails -->
-        <test-method is-config="true" signature="postcondition()[pri:0, instance:scripts.TC1_EditUserDetails@740cae06]" started-at="2020-10-13T15:35:44Z" name="postcondition" finished-at="2020-10-13T15:35:45Z" duration-ms="634" status="PASS">
+        <test-method is-config="true" signature="postcondition(org.testng.ITestResult)[pri:0, instance:scripts.TC1_EditUserDetails@26d9b808]" started-at="2020-10-14T14:43:49Z" name="postcondition" finished-at="2020-10-14T14:43:49Z" duration-ms="353" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=editEmployeeDetails status=FAILURE method=TC1_EditUserDetails.editEmployeeDetails()[pri:0, instance:scripts.TC1_EditUserDetails@26d9b808] output=Admin has been entered in UsernameTextBox]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postcondition -->
