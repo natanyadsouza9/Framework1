@@ -18,7 +18,7 @@ public class LoginPage extends BasePage {
 	private WebElement loginButton;
 	@FindBy(linkText="PIM")
 	private WebElement pimModule;
-	@FindBy(xpath="//a[text()='Employee List1']")
+	@FindBy(xpath="//a[text()='Employee List']")
 	private WebElement employeeListSubMenu;
 	@FindBy(xpath="//a[contains(text(),'0006')]")
 	private WebElement employeeId;
@@ -61,7 +61,7 @@ public String clickLoginButton(){
 
 public String hoverOnPIM(){
 	
-	return GenericUtils.mouseHover(pimModule,"PIM_Module");
+	return GenericUtils.mouseHover(pimModule,"PIM_Module", driver);
 }
 
 public String clickEmployeeListSubMenu(){

@@ -16,9 +16,11 @@ import pom.LoginPage;
 
 public class TC1_EditUserDetails extends BaseTest {
 	
+	public WebDriver driver;
 	@Test(enabled=true)
 	public void editEmployeeDetails() throws InterruptedException, EncryptedDocumentException, InvalidFormatException, IOException{
 		
+		driver=initializeDriver();
 		test = extent.createTest("editEmployeeDetails");
 		extentTest.set(test);
 		LoginPage l=new LoginPage(driver);
@@ -64,10 +66,10 @@ public class TC1_EditUserDetails extends BaseTest {
 		l.setUserName("Username");
 		l.setPassword("Password");
 		l.clickLoginButton();
-		BasePage.verifyTitle("OrangeHRM","HomePage");
+		BasePage.verifyTitle("OrangeHRM","HomePage", driver);
 		l.hoverOnPIM();
 		l.clickEmployeeListSubMenu();
-		BasePage.verifyTitle("OrangeHRM","EmployeeList_Page");
+		BasePage.verifyTitle("OrangeHRM","EmployeeList_Page", driver);
 		l.verifyListBoxIsSorted();
 		//BasePage.verifyElementIsPresent();
 			

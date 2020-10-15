@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
@@ -12,10 +13,11 @@ import org.testng.Reporter;
 
 public class GenericUtils extends BaseTest {
 	
-	public static String mouseHover(WebElement element,String elementName){
+	public  static String mouseHover(WebElement element,String elementName,WebDriver driver){
 		
 		String text1;
 		try{
+			
 	Actions action=new Actions(driver);
 	action.moveToElement(element).perform();
 	text1="Mouse hovered on element "+elementName;
@@ -32,7 +34,7 @@ public class GenericUtils extends BaseTest {
 	return text1;
 }	
 	
-	public static String dragDrop(WebElement src,WebElement dest){
+	public static String dragDrop(WebElement src,WebElement dest,WebDriver driver){
 		
 		String text1;
 

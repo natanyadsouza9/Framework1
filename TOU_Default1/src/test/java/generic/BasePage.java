@@ -16,7 +16,7 @@ import com.aventstack.extentreports.Status;
 
 public class BasePage extends BaseTest {
 
-	public static WebDriver driver;
+	public  WebDriver driver;
 	static SoftAssert soft=new SoftAssert();
 
 	public BasePage(WebDriver driver){
@@ -24,7 +24,7 @@ public class BasePage extends BaseTest {
 		this.driver=driver;
 	}
 
-	public static void verifyTitle(String expectedTitle,String PageName){
+	public static void verifyTitle(String expectedTitle,String PageName, WebDriver driver){
 
 		String text1;
 
@@ -88,7 +88,7 @@ public class BasePage extends BaseTest {
 
 	}
 
-	public static void verifyElementIsPresent(){
+	public static void verifyElementIsPresent(WebDriver driver){
 
 		String text1;
 

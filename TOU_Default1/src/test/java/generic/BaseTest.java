@@ -15,14 +15,13 @@ import com.aventstack.extentreports.Status;
 
 
 public class BaseTest implements AutoConst {
-	public static WebDriver driver;
+	public  WebDriver driver;
 	public static String TestScriptName="";
-	public ExtentTest test;
-	public ExtentReports extent=ExtentReporter.getReportObject();
-	public ThreadLocal<ExtentTest> extentTest =new ThreadLocal<ExtentTest>();
+	public static ExtentTest test;
+	public static ExtentReports extent=ExtentReporter.getReportObject();
+	public static ThreadLocal<ExtentTest> extentTest =new ThreadLocal<ExtentTest>();
 
-	@BeforeMethod
-	public void precondition() throws InterruptedException{
+	public WebDriver initializeDriver() throws InterruptedException{
 
 
 		System.setProperty(CHROME_KEY, CHROME_VALUE);
@@ -35,6 +34,7 @@ public class BaseTest implements AutoConst {
 		 */
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 		driver.manage().window().maximize();
+		return driver;
 	}
 
 	@BeforeMethod
@@ -57,12 +57,5 @@ public class BaseTest implements AutoConst {
 
 	}
 
-	public  void logsGeneration(String message)
-	{
 
-		// test.log(Status.INFO,message);
-		extentTest.get().log(Status.INFO, message);
-
-
-	}
 }

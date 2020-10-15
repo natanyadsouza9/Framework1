@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,21 +90,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="scripts.TC1_EditUserDetails" class="method navigator-link" hash-for-method="editEmployeeDetails">editEmployeeDetails</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="scripts.TC2_launchOrangeHRM" class="method navigator-link" hash-for-method="launchOrangeHRM">launchOrangeHRM</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,9 +121,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">scripts.TC1_EditUserDetails</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -127,57 +132,25 @@
                   <a name="editEmployeeDetails">
                   </a> <!-- editEmployeeDetails -->
                   <span class="method-name">editEmployeeDetails</span>
-                  <div class="stack-trace"><b>"java.lang.AssertionError: employeeList_SubMenu has not been clicked
-	at org.junit.Assert.fail(Assert.java:93)
-	at generic.BasePage.clickOnElement(BasePage.java:83)
-	at pom.LoginPage.clickEmployeeListSubMenu(LoginPage.java:69)
-	at scripts.TC1_EditUserDetails.editEmployeeDetails(TC1_EditUserDetails.java:32)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
-... Removed 21 stack frames<br/> java.lang.AssertionError: employeeList_SubMenu has not been clicked
-	at org.junit.Assert.fail(Assert.java:93)
-	at generic.BasePage.clickOnElement(BasePage.java:83)
-	at pom.LoginPage.clickEmployeeListSubMenu(LoginPage.java:69)
-	at scripts.TC1_EditUserDetails.editEmployeeDetails(TC1_EditUserDetails.java:32)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
-"</b><br>org.junit.Assert.fail(Assert.java:93)<br>generic.BasePage.clickOnElement(BasePage.java:83)<br>pom.LoginPage.clickEmployeeListSubMenu(LoginPage.java:69)<br>scripts.TC1_EditUserDetails.editEmployeeDetails(TC1_EditUserDetails.java:32)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)<br>org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)<br>org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)<br>
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">scripts.TC2_launchOrangeHRM</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="launchOrangeHRM">
+                  </a> <!-- launchOrangeHRM -->
+                  <span class="method-name">launchOrangeHRM</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -188,9 +161,10 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;scripts.TC1_EditUserDetails&quot;/&gt;
+      &lt;class name=&quot;scripts.TC2_launchOrangeHRM&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -204,7 +178,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -230,16 +204,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'editEmployeeDetails')
 data.setCell(0, 2, 'scripts.TC1_EditUserDetails')
-data.setCell(0, 3, 3059);
+data.setCell(0, 3, 11293);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'launchOrangeHRM')
+data.setCell(1, 2, 'scripts.TC2_launchOrangeHRM')
+data.setCell(1, 3, 10560);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -257,7 +235,16 @@ return data;
                 <span class="reporter-method-output">admin123 has been entered in PasswordTextbox</span>
                 <span class="reporter-method-output">LoginButton has been clicked</span>
                 <span class="reporter-method-output">Mouse hovered on element PIM_Module</span>
-                <span class="reporter-method-output">employeeList_SubMenu has not been clicked </span>
+                <span class="reporter-method-output">employeeList_SubMenu has been clicked</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">launchOrangeHRM</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Admin has been entered in UsernameTextBox</span>
+                <span class="reporter-method-output">admin123 has been entered in PasswordTextbox</span>
+                <span class="reporter-method-output">LoginButton has been clicked</span>
+                <span class="reporter-method-output">Mouse hovered on element PIM_Module</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -287,19 +274,37 @@ return data;
                 <span class="method-name">handleTestScriptName(public void scripts.TC1_EditUserDetails.editEmployeeDetails() throws java.lang.InterruptedException,...)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts.TC2_launchOrangeHRM</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">precondition</span>
-                <span class="method-start">4 ms</span>
+                <span class="method-name">handleTestScriptName(public void scripts.TC2_launchOrangeHRM.launchOrangeHRM() throws java.lang.InterruptedException,org....)</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts.TC1_EditUserDetails</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">editEmployeeDetails</span>
-                <span class="method-start">6875 ms</span>
+                <span class="method-start">6 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts.TC2_launchOrangeHRM</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">launchOrangeHRM</span>
+                <span class="method-start">6 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">postcondition([TestResult name=editEmployeeDetails status=FAILURE method=TC1_EditUserDetails.editEmployeeDetails()...)</span>
-                <span class="method-start">9937 ms</span>
+                <span class="method-name">postcondition([TestResult name=launchOrangeHRM status=SUCCESS method=TC2_launchOrangeHRM.launchOrangeHRM()[pri:0, ...)</span>
+                <span class="method-start">10566 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts.TC1_EditUserDetails</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">postcondition([TestResult name=editEmployeeDetails status=SUCCESS method=TC1_EditUserDetails.editEmployeeDetails()...)</span>
+                <span class="method-start">11300 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
