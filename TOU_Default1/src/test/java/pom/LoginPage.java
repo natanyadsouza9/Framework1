@@ -34,6 +34,8 @@ public class LoginPage extends BasePage {
 	private WebElement logoutButton;
 	@FindBy(xpath="//select[@id='empsearch_job_title']")
 	private WebElement jobTitle_ListBox;
+	@FindBy(xpath="//div[@id='forgotPasswordLink'] //a")
+	private WebElement forgotPassword_Link;
 	
 	BasePage p=new BasePage(driver);
 	public LoginPage(WebDriver driver){
@@ -112,5 +114,9 @@ public void verifyListBoxIsSorted(){
 GenericUtils.sortListBox(jobTitle_ListBox);
 }
 
+public String clickForgotPassword(){
+	
+	return BasePage.clickOnElement(forgotPassword_Link,"forgotPassword_Link");
+}
 
 }

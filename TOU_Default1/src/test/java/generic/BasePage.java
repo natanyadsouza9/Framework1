@@ -107,6 +107,27 @@ public class BasePage extends BaseTest {
 		}
 	}
 
+	public static String clickForgotPassword(WebElement element,String elementName){
 
+		String text1;
+
+		try{
+			element.click();
+			Reporter.log(elementName+" has been clicked",true);
+			text1=elementName+" has been clicked";
+		}
+
+		catch(Exception e){
+
+			text1=elementName+" has not been clicked";
+
+			Reporter.log(elementName+" has not been clicked ",false);
+			Assert.fail(text1);		
+
+		}
+
+		return text1;
+
+	}
 
 }
