@@ -32,12 +32,12 @@
       <![CDATA[employeeList_SubMenu has been clicked]]>
     </line>
   </reporter-output>
-  <suite started-at="2020-10-15T23:10:50Z" name="Suite" finished-at="2020-10-15T23:11:01Z" duration-ms="11499">
+  <suite started-at="2020-10-16T22:16:01Z" name="Suite" finished-at="2020-10-16T22:16:12Z" duration-ms="11064">
     <groups>
     </groups>
-    <test started-at="2020-10-15T23:10:50Z" name="Test" finished-at="2020-10-15T23:11:01Z" duration-ms="11499">
+    <test started-at="2020-10-16T22:16:01Z" name="Test" finished-at="2020-10-16T22:16:12Z" duration-ms="11064">
       <class name="scripts.TC3_forgotPassword">
-        <test-method is-config="true" signature="handleTestScriptName(java.lang.reflect.Method)[pri:0, instance:scripts.TC3_forgotPassword@7526515b]" started-at="2020-10-15T16:10:50Z" name="handleTestScriptName" finished-at="2020-10-15T16:10:50Z" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="handleTestScriptName(java.lang.reflect.Method)[pri:0, instance:scripts.TC3_forgotPassword@7526515b]" started-at="2020-10-16T15:16:01Z" name="handleTestScriptName" finished-at="2020-10-16T15:16:01Z" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,14 +48,14 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- handleTestScriptName -->
-        <test-method signature="forgotPassword()[pri:0, instance:scripts.TC3_forgotPassword@7526515b]" started-at="2020-10-15T16:10:50Z" name="forgotPassword" finished-at="2020-10-15T16:10:58Z" duration-ms="8134" status="PASS">
+        <test-method signature="forgotPassword()[pri:0, instance:scripts.TC3_forgotPassword@7526515b]" started-at="2020-10-16T15:16:01Z" name="forgotPassword" finished-at="2020-10-16T15:16:09Z" duration-ms="7826" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[forgotPassword_Link has been clicked]]>
             </line>
           </reporter-output>
         </test-method> <!-- forgotPassword -->
-        <test-method is-config="true" signature="postcondition(org.testng.ITestResult)[pri:0, instance:scripts.TC3_forgotPassword@7526515b]" started-at="2020-10-15T16:10:58Z" name="postcondition" finished-at="2020-10-15T16:10:58Z" duration-ms="494" status="PASS">
+        <test-method is-config="true" signature="postcondition(org.testng.ITestResult)[pri:0, instance:scripts.TC3_forgotPassword@7526515b]" started-at="2020-10-16T15:16:09Z" name="postcondition" finished-at="2020-10-16T15:16:09Z" duration-ms="501" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -68,7 +68,7 @@
         </test-method> <!-- postcondition -->
       </class> <!-- scripts.TC3_forgotPassword -->
       <class name="scripts.TC1_EditUserDetails">
-        <test-method is-config="true" signature="handleTestScriptName(java.lang.reflect.Method)[pri:0, instance:scripts.TC1_EditUserDetails@69e153c5]" started-at="2020-10-15T16:10:50Z" name="handleTestScriptName" finished-at="2020-10-15T16:10:50Z" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="handleTestScriptName(java.lang.reflect.Method)[pri:0, instance:scripts.TC1_EditUserDetails@69e153c5]" started-at="2020-10-16T15:16:01Z" name="handleTestScriptName" finished-at="2020-10-16T15:16:01Z" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -79,7 +79,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- handleTestScriptName -->
-        <test-method signature="editEmployeeDetails()[pri:0, instance:scripts.TC1_EditUserDetails@69e153c5]" started-at="2020-10-15T16:10:50Z" name="editEmployeeDetails" finished-at="2020-10-15T16:11:01Z" duration-ms="11468" status="PASS">
+        <test-method signature="editEmployeeDetails()[pri:0, instance:scripts.TC1_EditUserDetails@69e153c5]" started-at="2020-10-16T15:16:01Z" name="editEmployeeDetails" finished-at="2020-10-16T15:16:12Z" duration-ms="11033" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Admin has been entered in UsernameTextBox]]>
@@ -98,7 +98,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- editEmployeeDetails -->
-        <test-method is-config="true" signature="postcondition(org.testng.ITestResult)[pri:0, instance:scripts.TC1_EditUserDetails@69e153c5]" started-at="2020-10-15T16:11:01Z" name="postcondition" finished-at="2020-10-15T16:11:01Z" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="postcondition(org.testng.ITestResult)[pri:0, instance:scripts.TC1_EditUserDetails@69e153c5]" started-at="2020-10-16T15:16:12Z" name="postcondition" finished-at="2020-10-16T15:16:12Z" duration-ms="14" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -111,7 +111,7 @@
         </test-method> <!-- postcondition -->
       </class> <!-- scripts.TC1_EditUserDetails -->
       <class name="scripts.TC2_launchOrangeHRM">
-        <test-method is-config="true" signature="handleTestScriptName(java.lang.reflect.Method)[pri:0, instance:scripts.TC2_launchOrangeHRM@173ed316]" started-at="2020-10-15T16:10:50Z" name="handleTestScriptName" finished-at="2020-10-15T16:10:50Z" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="handleTestScriptName(java.lang.reflect.Method)[pri:0, instance:scripts.TC2_launchOrangeHRM@173ed316]" started-at="2020-10-16T15:16:01Z" name="handleTestScriptName" finished-at="2020-10-16T15:16:01Z" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -122,7 +122,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- handleTestScriptName -->
-        <test-method signature="launchOrangeHRM()[pri:0, instance:scripts.TC2_launchOrangeHRM@173ed316]" started-at="2020-10-15T16:10:50Z" name="launchOrangeHRM" finished-at="2020-10-15T16:11:00Z" duration-ms="10753" status="PASS">
+        <test-method signature="launchOrangeHRM()[pri:0, instance:scripts.TC2_launchOrangeHRM@173ed316]" started-at="2020-10-16T15:16:01Z" name="launchOrangeHRM" finished-at="2020-10-16T15:16:11Z" duration-ms="10486" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Admin has been entered in UsernameTextBox]]>
@@ -138,7 +138,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- launchOrangeHRM -->
-        <test-method is-config="true" signature="postcondition(org.testng.ITestResult)[pri:0, instance:scripts.TC2_launchOrangeHRM@173ed316]" started-at="2020-10-15T16:11:00Z" name="postcondition" finished-at="2020-10-15T16:11:00Z" duration-ms="17" status="PASS">
+        <test-method is-config="true" signature="postcondition(org.testng.ITestResult)[pri:0, instance:scripts.TC2_launchOrangeHRM@173ed316]" started-at="2020-10-16T15:16:11Z" name="postcondition" finished-at="2020-10-16T15:16:12Z" duration-ms="17" status="PASS">
           <params>
             <param index="0">
               <value>

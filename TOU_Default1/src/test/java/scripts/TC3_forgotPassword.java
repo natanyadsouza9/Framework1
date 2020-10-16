@@ -21,10 +21,21 @@ public class TC3_forgotPassword extends BaseTest {
 	@Test
 	public void forgotPassword() throws InterruptedException, EncryptedDocumentException, InvalidFormatException, IOException {
 		
-		driver=initializeDriver();
-
+		
 		test = extent.createTest("forgotPassword");
 		extentTest.set(test);
+		try {
+			driver=initializeDriver();
+			extentTest.get().log(Status.INFO, "URL launched successfully");
+
+			}
+			
+			catch(Exception e) {
+				
+				extentTest.get().log(Status.INFO, "URL application not launced");
+			
+			}
+		
 		LoginPage l=new LoginPage(driver);
 		extentTest.get().log(Status.INFO, l.clickForgotPassword());
 

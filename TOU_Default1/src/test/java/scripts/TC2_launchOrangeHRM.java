@@ -20,10 +20,21 @@ public class TC2_launchOrangeHRM extends BaseTest {
 	@Test
 	public void launchOrangeHRM() throws InterruptedException, EncryptedDocumentException, InvalidFormatException, IOException {
 		
-		driver=initializeDriver();
-
+		
 		test = extent.createTest("launchOrangeHRM");
 		extentTest.set(test);
+		try {
+			driver=initializeDriver();
+			extentTest.get().log(Status.INFO, "URL launched successfully");
+
+			}
+			
+			catch(Exception e) {
+				
+				extentTest.get().log(Status.INFO, "URL application not launced");
+			
+			}
+		
 		LoginPage l=new LoginPage(driver);
 		extentTest.get().log(Status.INFO, l.setUserName(Excel.readData("Username")));
 

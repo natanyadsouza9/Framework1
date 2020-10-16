@@ -16,25 +16,26 @@ import com.aventstack.extentreports.Status;
 
 public class BaseTest implements AutoConst {
 	public  WebDriver driver;
+
 	public static String TestScriptName="";
 	public static ExtentTest test;
 	public static ExtentReports extent=ExtentReporter.getReportObject();
 	public static ThreadLocal<ExtentTest> extentTest =new ThreadLocal<ExtentTest>();
 
-	public WebDriver initializeDriver() throws InterruptedException{
+	public WebDriver initializeDriver(){
 
 
 		System.setProperty(CHROME_KEY, CHROME_VALUE);
 		driver=new ChromeDriver();
 
-		/*	String GECKO_KEY="webdriver.gecko.driver";
-		String GECKO_VALUE="./drivers/geckodriver.exe";
-		System.setProperty(GECKO_KEY, GECKO_VALUE);
-		 driver=new FirefoxDriver();
-		 */
+		
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 		driver.manage().window().maximize();
 		return driver;
+	
+
+
+
 	}
 
 	@BeforeMethod

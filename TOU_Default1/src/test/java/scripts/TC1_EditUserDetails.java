@@ -19,10 +19,20 @@ public class TC1_EditUserDetails extends BaseTest {
 	public WebDriver driver;
 	@Test(enabled=true)
 	public void editEmployeeDetails() throws InterruptedException, EncryptedDocumentException, InvalidFormatException, IOException{
-		
-		driver=initializeDriver();
 		test = extent.createTest("editEmployeeDetails");
 		extentTest.set(test);
+		
+		try {
+		driver=initializeDriver();
+		extentTest.get().log(Status.INFO, "URL launched successfully");
+
+		}
+		
+		catch(Exception e) {
+			
+			extentTest.get().log(Status.INFO, "URL application not launced");
+		
+		}
 		LoginPage l=new LoginPage(driver);
 		extentTest.get().log(Status.INFO, l.setUserName(Excel.readData("Username")));
 
