@@ -56,7 +56,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">Oct 16, 2020 03:16:01 PM</span>
+                    <span class="badge badge-primary">Oct 16, 2020 08:50:01 PM</span>
                 </a>
             </li>
         </ul>
@@ -72,7 +72,15 @@
           <span class="title">Tests</span>
         </a>
       </li>
-            <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+            <li class="nav-item dropdown" onclick="toggleView('exception-view')">
+        <a id="nav-ex" class="dropdown-toggle" href="exception.html">
+          <span class="icon-holder">
+            <i class="fa fa-bug"></i>
+          </span>
+          <span class="title">Exception</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
         <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
           <span class="icon-holder">
             <i class="fa fa-bar-chart"></i>
@@ -101,7 +109,7 @@
 					</a>
 					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 						<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success pull-right"></span></a>
-						
+						<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>
 						
 						
 						
@@ -123,19 +131,19 @@
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">editEmployeeDetails</p>
-							<p class="duration text-sm">0h 0m 11s+31ms</p>
-							<span class="datetime">15:16:01 PM</span>
+							<p class="name">forgotPassword</p>
+							<p class="duration text-sm">0h 0m 8s+348ms</p>
+							<span class="datetime">20:50:01 PM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-pass">editEmployeeDetails</h5>
-									<span class='badge badge-success'>10.16.2020 15:16:01</span>
-									<span class='badge badge-danger'>10.16.2020 15:16:12</span>
-									<span class='badge badge-default'>0h 0m 11s+31ms</span>
+									<h5 class="test-status text-pass">forgotPassword</h5>
+									<span class='badge badge-success'>10.16.2020 20:50:01</span>
+									<span class='badge badge-danger'>10.16.2020 20:50:10</span>
+									<span class='badge badge-default'>0h 0m 8s+348ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -152,132 +160,21 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-info text-info"></i></td>
-				<td>3:16:08 PM</td>
+				<td>8:50:09 PM</td>
 				<td>
 						URL launched successfully
 				</td>
 			</tr>
 			<tr class="event-row">
 				<td><i class="fa fa-info text-info"></i></td>
-				<td>3:16:09 PM</td>
+				<td>8:50:10 PM</td>
 				<td>
-						Admin has been entered in UsernameTextBox
-				</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-info text-info"></i></td>
-				<td>3:16:10 PM</td>
-				<td>
-						admin123 has been entered in PasswordTextbox
-				</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-info text-info"></i></td>
-				<td>3:16:11 PM</td>
-				<td>
-						LoginButton has been clicked
-				</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-info text-info"></i></td>
-				<td>3:16:11 PM</td>
-				<td>
-						Mouse hovered on element PIM_Module
-				</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-info text-info"></i></td>
-				<td>3:16:12 PM</td>
-				<td>
-						employeeList_SubMenu has been clicked
+						forgotPassword_Link has been clicked
 				</td>
 			</tr>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>3:16:12 PM</td>
-				<td>
-						Test Case Passed successfully
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-					</div>
-				</li>
-				<li class="test-item"  status="pass" test-id="3"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">launchOrangeHRM</p>
-							<p class="duration text-sm">0h 0m 10s+484ms</p>
-							<span class="datetime">15:16:01 PM</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-pass">launchOrangeHRM</h5>
-									<span class='badge badge-success'>10.16.2020 15:16:01</span>
-									<span class='badge badge-danger'>10.16.2020 15:16:11</span>
-									<span class='badge badge-default'>0h 0m 10s+484ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-info text-info"></i></td>
-				<td>3:16:08 PM</td>
-				<td>
-						URL launched successfully
-				</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-info text-info"></i></td>
-				<td>3:16:09 PM</td>
-				<td>
-						Admin has been entered in UsernameTextBox
-				</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-info text-info"></i></td>
-				<td>3:16:10 PM</td>
-				<td>
-						admin123 has been entered in PasswordTextbox
-				</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-info text-info"></i></td>
-				<td>3:16:11 PM</td>
-				<td>
-						LoginButton has been clicked
-				</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-info text-info"></i></td>
-				<td>3:16:11 PM</td>
-				<td>
-						Mouse hovered on element PIM_Module
-				</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>3:16:11 PM</td>
+				<td>8:50:10 PM</td>
 				<td>
 						Test Case Passed successfully
 				</td>
@@ -296,19 +193,19 @@
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">forgotPassword</p>
-							<p class="duration text-sm">0h 0m 7s+823ms</p>
-							<span class="datetime">15:16:01 PM</span>
+							<p class="name">launchOrangeHRM</p>
+							<p class="duration text-sm">0h 0m 10s+953ms</p>
+							<span class="datetime">20:50:01 PM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-pass">forgotPassword</h5>
-									<span class='badge badge-success'>10.16.2020 15:16:01</span>
-									<span class='badge badge-danger'>10.16.2020 15:16:09</span>
-									<span class='badge badge-default'>0h 0m 7s+823ms</span>
+									<h5 class="test-status text-pass">launchOrangeHRM</h5>
+									<span class='badge badge-success'>10.16.2020 20:50:01</span>
+									<span class='badge badge-danger'>10.16.2020 20:50:12</span>
+									<span class='badge badge-default'>0h 0m 10s+953ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -325,21 +222,42 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-info text-info"></i></td>
-				<td>3:16:08 PM</td>
+				<td>8:50:09 PM</td>
 				<td>
 						URL launched successfully
 				</td>
 			</tr>
 			<tr class="event-row">
 				<td><i class="fa fa-info text-info"></i></td>
-				<td>3:16:09 PM</td>
+				<td>8:50:10 PM</td>
 				<td>
-						forgotPassword_Link has been clicked
+						Admin has been entered in UsernameTextBox
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>8:50:11 PM</td>
+				<td>
+						admin123 has been entered in PasswordTextbox
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>8:50:12 PM</td>
+				<td>
+						LoginButton has been clicked
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>8:50:12 PM</td>
+				<td>
+						Mouse hovered on element PIM_Module
 				</td>
 			</tr>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>3:16:09 PM</td>
+				<td>8:50:12 PM</td>
 				<td>
 						Test Case Passed successfully
 				</td>
@@ -347,6 +265,184 @@
 	</tbody>
 </table>
 </div>
+					</div>
+				</li>
+				<li class="test-item"  status="fail" test-id="3"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar fail-bg">
+						<i class="fa fa-times text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">editEmployeeDetails</p>
+							<p class="duration text-sm">0h 0m 10s+954ms</p>
+							<span class="datetime">20:50:01 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-fail">editEmployeeDetails</h5>
+									<span class='badge badge-success'>10.16.2020 20:50:01</span>
+									<span class='badge badge-danger'>10.16.2020 20:50:12</span>
+									<span class='badge badge-default'>0h 0m 10s+954ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>8:50:09 PM</td>
+				<td>
+						URL launched successfully
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>8:50:10 PM</td>
+				<td>
+						Admin has been entered in UsernameTextBox
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>8:50:11 PM</td>
+				<td>
+						admin123 has been entered in PasswordTextbox
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>8:50:12 PM</td>
+				<td>
+						LoginButton has been clicked
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>8:50:12 PM</td>
+				<td>
+						Mouse hovered on element PIM_Module
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>8:50:12 PM</td>
+				<td>
+						<textarea disabled class="code-block">java.lang.AssertionError: employeeList_SubMenu has not been clicked
+	at org.junit.Assert.fail(Assert.java:93)
+	at generic.BasePage.clickOnElement(BasePage.java:83)
+	at pom.LoginPage.clickEmployeeListSubMenu(LoginPage.java:71)
+	at scripts.TC1_EditUserDetails.editEmployeeDetails(TC1_EditUserDetails.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</textarea>
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\natanya\git\Framework1\TOU_Default1\reports\editEmployeeDetails.png' src='C:\Users\natanya\git\Framework1\TOU_Default1\reports\editEmployeeDetails.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="test-content scrollable">
+		<div class="test-content-tools">
+			<ul>
+				<li>
+					<a class="back-to-test" href="javascript:void(0)">
+					<i class="fa fa-arrow-left"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="test-content-detail">
+			<div class="detail-body"></div>
+		</div>
+	</div>
+</div><div class="test-wrapper row exception-view attributes-view">
+	<div class="test-list">
+		<div class="test-list-tools">
+			<ul class="tools pull-left">
+				<li>
+					<a href="">
+					<span class="font-size-14">Exception</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="tools text-right">
+				<li>
+					<a href="#">
+					<span class="badge badge-primary">1</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="test-list-wrapper scrollable">
+			<ul class="test-list-item">
+				<li class="test-item">
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">java.lang.AssertionError</p>
+							<p class="duration text-sm">1 tests</p>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="info">
+							<h4>java.lang.AssertionError</h4>
+						</div>
+						<table class='table table-sm mt-4'>
+							<thead>
+								<tr>
+									<th class="status-col">Status</th>
+									<th class="timestamp-col">Timestamp</th>
+									<th>TestName</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>20:50:01 PM</td>
+									<td class='linked' test-id='3'>
+										editEmployeeDetails
+									</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</li>
 			</ul>
@@ -380,12 +476,12 @@
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='100%'>
-						<b>3</b> tests passed
+					<div><small data-tooltip='66.667%'>
+						<b>2</b> tests passed
 						</small>
 					</div>
 					<div>
-						<small data-tooltip='0%'><b>0</b> tests failed, 
+						<small data-tooltip='33.333%'><b>1</b> tests failed, 
 						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -403,10 +499,10 @@
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='18.75%'><b>3</b> events passed</small></div>
+					<div><small data-tooltip='13.333%'><b>2</b> events passed</small></div>
 					<div>
-						<small data-tooltip='0%'><b>0</b> events failed, 
-						<b data-tooltip='81.25%'>13</b> others
+						<small data-tooltip='6.667%'><b>1</b> events failed, 
+						<b data-tooltip='80%'>12</b> others
 						</small>
 					</div>
 				</div>
@@ -423,7 +519,7 @@
 							<h2 class="font-size-28 font-weight-light mt-3">3</h2>
 							<span class="text-semibold text-success font-size-15">
 							<i class="ti-arrow-up font-size-11"></i> 
-							<span>100.00%</span>
+							<span>66.67%</span>
 							</span>
 						</div>
 						<div class="align-self-end">
@@ -439,7 +535,7 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Start</h6>
-							<h4 class="font-weight-light mt-4">Oct 16, 2020 03:16:01 PM</h4>
+							<h4 class="font-weight-light mt-4">Oct 16, 2020 08:50:01 PM</h4>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -455,7 +551,7 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Duration</h6>
-							<h4 class="font-weight-light mt-4">0h 0m 11s+165ms</h4>
+							<h4 class="font-weight-light mt-4">0h 0m 11s+463ms</h4>
 							<span class="text-semibold font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -509,13 +605,13 @@
 <script>
 	var statusGroup = {
 	    parentCount: 3,
-		passParent: 3,
-		failParent: 0,
+		passParent: 2,
+		failParent: 1,
 		fatalParent: 0,
 		errorParent: 0,
 		warningParent: 0,
 		skipParent: 0,
-		exceptionsParent: 0,
+		exceptionsParent: 1,
 		childCount: 0,
 		passChild: 0,
 		failChild: 0,
@@ -536,21 +632,21 @@
 		infoGrandChild: 0,
 		debugGrandChild: 0,
 		exceptionsGrandChild: 0,
-		eventsCount: 16,
-		passEvents: 3,
-		failEvents: 0,
+		eventsCount: 15,
+		passEvents: 2,
+		failEvents: 1,
 		fatalEvents: 0,
 		errorEvents: 0,
 		warningEvents: 0,
 		skipEvents: 0,
-		infoEvents: 13,
+		infoEvents: 12,
 		debugEvents: 0,
 		exceptionsEvents: 0
 	};
 </script>
 <script>
 	var timeline = {
-	        "editEmployeeDetails":11.031,"launchOrangeHRM":10.484,"forgotPassword":7.823
+	        "forgotPassword":8.348,"launchOrangeHRM":10.953,"editEmployeeDetails":10.954
 	};
 </script>
                 </div>

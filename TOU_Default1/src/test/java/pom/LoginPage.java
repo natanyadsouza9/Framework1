@@ -18,7 +18,7 @@ public class LoginPage extends BasePage {
 	private WebElement loginButton;
 	@FindBy(linkText="PIM")
 	private WebElement pimModule;
-	@FindBy(xpath="//a[text()='Employee List']")
+	@FindBy(xpath="//a[text()='Employee List1']")
 	private WebElement employeeListSubMenu;
 	@FindBy(xpath="//a[contains(text(),'0006')]")
 	private WebElement employeeId;
