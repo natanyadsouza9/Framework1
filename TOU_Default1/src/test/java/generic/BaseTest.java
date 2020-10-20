@@ -95,5 +95,20 @@ public class BaseTest implements AutoConst {
 		return dest;
 		
 	}
+	
+public File takeScreenshot1(WebDriver driver,String testcaseName) {
+		
+		TakesScreenshot ts=(TakesScreenshot)driver;
+		File source=ts.getScreenshotAs(OutputType.FILE);
+		String dest=System.getProperty("user.dir")+"\\reports\\"+testcaseName+".png";
+		try {
+			FileUtils.copyFile(source, new File(dest));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return new File(dest);
+	}
 
 }

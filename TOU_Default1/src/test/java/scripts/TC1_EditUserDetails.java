@@ -7,7 +7,10 @@ import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.MediaEntityModelProvider;
 import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.Markup;
 
 import generic.BasePage;
 import generic.BaseTest;
@@ -15,35 +18,33 @@ import generic.Excel;
 import pom.LoginPage;
 
 public class TC1_EditUserDetails extends BaseTest {
-	
+
 	public WebDriver driver;
 	@Test(enabled=true)
 	public void editEmployeeDetails() throws InterruptedException, EncryptedDocumentException, InvalidFormatException, IOException{
 		test = extent.createTest("editEmployeeDetails");
 		extentTest.set(test);
-		
-		try {
-		driver=initializeDriver();
-		extentTest.get().log(Status.INFO, "URL launched successfully");
 
+		try {
+			driver=initializeDriver();
+			extentTest.get().log(Status.INFO, "URL launched successfullly", MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"initializeDriver")).build());
 		}
-		
+
 		catch(Exception e) {
-			
-			extentTest.get().log(Status.INFO, "URL application not launced");
-		
+
+			extentTest.get().log(Status.INFO, "URL not launched successfullly", MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"initializeDriver")).build());
+
+
 		}
 		LoginPage l=new LoginPage(driver);
-		extentTest.get().log(Status.INFO, l.setUserName(Excel.readData("Username")));
 
-		extentTest.get().log(Status.INFO,l.setPassword(Excel.readData("Password")));
-		extentTest.get().log(Status.INFO,l.clickLoginButton());
-		extentTest.get().log(Status.INFO,l.hoverOnPIM());
 
-		//BasePage.verifyTitle("OrangeHRM","HomePage");
-		extentTest.get().log(Status.INFO,l.clickEmployeeListSubMenu());
-
-/*		
+		extentTest.get().log(Status.INFO, l.setUserName(Excel.readData("Username")), MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"setUserName")).build());
+		extentTest.get().log(Status.INFO,l.setPassword(Excel.readData("Password")),MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"setPassword")).build());
+		extentTest.get().log(Status.INFO,l.clickLoginButton(),MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"clickLoginButton")).build());
+		extentTest.get().log(Status.INFO,l.hoverOnPIM(),MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"hoverOnPIM")).build());
+		extentTest.get().log(Status.INFO,l.clickEmployeeListSubMenu(),MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"clickEmployeeListSubMenu")).build());
+		/*		
 		//BasePage.verifyTitle("OrangeHRM","EmployeeList_Page");
 		Thread.sleep(5000);
 		//BasePage.verifyElementIsPresent();
@@ -66,12 +67,12 @@ public class TC1_EditUserDetails extends BaseTest {
 
 		//BasePage.verifyElementIsPresent();
 
-		*/
+		 */
 	}
-	
+
 	@Test(enabled=false)
 	public void verifyListBox() throws InterruptedException{
-		
+
 		LoginPage l=new LoginPage(driver);
 		l.setUserName("Username");
 		l.setPassword("Password");
@@ -82,7 +83,7 @@ public class TC1_EditUserDetails extends BaseTest {
 		BasePage.verifyTitle("OrangeHRM","EmployeeList_Page", driver);
 		l.verifyListBoxIsSorted();
 		//BasePage.verifyElementIsPresent();
-			
+
 	}
 
 
