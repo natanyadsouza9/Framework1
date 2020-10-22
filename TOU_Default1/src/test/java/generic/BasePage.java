@@ -2,6 +2,8 @@ package generic;
 
 import java.util.concurrent.TimeUnit;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,7 +16,11 @@ import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.Status;
 
+
+
 public class BasePage extends BaseTest {
+
+	public static Logger log =LogManager.getLogger(BaseTest.class.getName());
 
 	public  WebDriver driver;
 	static SoftAssert soft=new SoftAssert();
@@ -31,13 +37,13 @@ public class BasePage extends BaseTest {
 		try{
 			WebDriverWait wait=new WebDriverWait(driver,30);
 			//wait.until(ExpectedConditions.titleIs(expectedTitle));
-			Reporter.log(PageName+" is displayed ",true);
+			log.info(PageName+" is displayed ");
 			text1=PageName+" is displayed ";
 		}
 
 		catch(Exception e){
 			text1=PageName+" is not displayed ";
-			Reporter.log(PageName+" is not displayed ",true);
+			log.error(PageName+" is not displayed ");
 			Assert.fail(text1);		
 
 		}
@@ -51,14 +57,14 @@ public class BasePage extends BaseTest {
 			element.clear();
 			element.sendKeys(text);
 			text1=text+" has been entered in "+elementName;
-			Reporter.log(text+" has been entered in "+elementName,true);
+		log.info(text+" has been entered in "+elementName);
 			//logsGeneration(text+" has been entered in "+elementName);
 
 		}
 
 		catch(Exception e){
 			text1=text+" has not been entered in "+elementName;
-			Reporter.log(text+" has not been entered in "+elementName,false);
+			log.error(text+" has not been entered in "+elementName);
 			Assert.fail(text1);		
 
 		}
@@ -71,7 +77,7 @@ public class BasePage extends BaseTest {
 
 		try{
 			element.click();
-			Reporter.log(elementName+" has been clicked",true);
+			log.info(elementName+" has been clicked");
 			text1=elementName+" has been clicked";
 		}
 
@@ -79,7 +85,7 @@ public class BasePage extends BaseTest {
 
 			text1=elementName+" has not been clicked";
 
-			Reporter.log(elementName+" has not been clicked ",false);
+			log.error(elementName+" has not been clicked ");
 			Assert.fail(text1);		
 
 		}
@@ -94,14 +100,14 @@ public class BasePage extends BaseTest {
 
 		try{
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-			Reporter.log("element  is  present ",true);
+			log.info("element  is  present ");
 			text1="element  is  present ";
 
 		}
 
 		catch(Exception e){
 			text1="element  is not  present ";
-			Reporter.log("element  is  not present ",true);
+			log.error("element  is  not present ");
 			Assert.fail(text1);		
 
 		}
@@ -113,7 +119,7 @@ public class BasePage extends BaseTest {
 
 		try{
 			element.click();
-			Reporter.log(elementName+" has been clicked",true);
+			log.info(elementName+" has been clicked");
 			text1=elementName+" has been clicked";
 		}
 
@@ -121,7 +127,7 @@ public class BasePage extends BaseTest {
 
 			text1=elementName+" has not been clicked";
 
-			Reporter.log(elementName+" has not been clicked ",false);
+			log.error(elementName+" has not been clicked ");
 			Assert.fail(text1);		
 
 		}

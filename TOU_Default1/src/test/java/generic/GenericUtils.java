@@ -1,9 +1,12 @@
 package generic;
 
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,6 +16,8 @@ import org.testng.Reporter;
 
 public class GenericUtils extends BaseTest {
 	
+	public static Logger log =LogManager.getLogger(BaseTest.class.getName());
+
 	public  static String mouseHover(WebElement element,String elementName,WebDriver driver){
 		
 		String text1;
@@ -21,13 +26,12 @@ public class GenericUtils extends BaseTest {
 	Actions action=new Actions(driver);
 	action.moveToElement(element).perform();
 	text1="Mouse hovered on element "+elementName;
-		Reporter.log("Mouse hovered on element "+elementName,true);
+		log.info("Mouse hovered on element "+elementName,true);
 		}
 		
 		catch(Exception e){
 			text1="Mouse was not hovered on element "+elementName;
-
-			Reporter.log("Mouse was not hovered on element "+elementName,true);
+			log.error("Mouse was not hovered on element "+elementName);
 			Assert.fail(text1);
 
 		}
@@ -42,14 +46,14 @@ public class GenericUtils extends BaseTest {
 	Actions action=new Actions(driver);
 	action.dragAndDrop(src, dest).build().perform();
 	text1="Element "+src+"has been dragged and dropped to "+dest;
-		Reporter.log("Element "+src+"has been dragged and dropped to "+dest,true);
+		log.info("Element "+src+"has been dragged and dropped to "+dest);
 		}
 		
 		catch(Exception e){
 			
 			text1="Element was not dragged and dropped "+src;
 
-			Reporter.log("Element was not dragged and dropped "+src,true);
+			log.error("Element was not dragged and dropped "+src);
 			Assert.fail(text1);
 
 		}
@@ -67,13 +71,13 @@ public class GenericUtils extends BaseTest {
 			text1="Dropdown value selected at index"+index;
 	Select select=new Select(element);
 	select.selectByIndex(index);
-		Reporter.log("Dropdown value selected at index"+index,true);
+		log.info("Dropdown value selected at index"+index);
 		}
 		
 		catch(Exception e){
 			
 			text1="Dropdown value not selected at index"+index;
-			Reporter.log("Dropdown value not selected at index"+index,true);
+			log.error("Dropdown value not selected at index"+index);
 			Assert.fail(text1);
 
 		}

@@ -31,45 +31,29 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">14.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">12.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
 <tr><th colspan="4">Test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">scripts.TC1_EditUserDetails</td><td><a href="#m1"><b>editEmployeeDetails</b>  </a></td><td class="numi">1</td><td>1603219186984</td><td class="numi">13703</td></tr>
+<tr class="failedodd"><td rowspan="1">scripts.TC1_EditUserDetails</td><td><a href="#m1"><b>editEmployeeDetails</b>  </a></td><td class="numi">1</td><td>1603326237286</td><td class="numi">12342</td></tr>
 <tr><th colspan="4">Test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">scripts.TC3_forgotPassword</td><td><a href="#m2"><b>forgotPassword</b>  </a></td><td class="numi">1</td><td>1603219186985</td><td class="numi">9219</td></tr>
-<tr class="passedeven"><td rowspan="1">scripts.TC2_launchOrangeHRM</td><td><a href="#m3"><b>launchOrangeHRM</b>  </a></td><td class="numi">1</td><td>1603219186985</td><td class="numi">13656</td></tr>
+<tr class="passedodd"><td rowspan="1">scripts.TC2_launchOrangeHRM</td><td><a href="#m2"><b>launchOrangeHRM</b>  </a></td><td class="numi">1</td><td>1603326237286</td><td class="numi">12012</td></tr>
+<tr class="passedeven"><td rowspan="1">scripts.TC3_forgotPassword</td><td><a href="#m3"><b>forgotPassword</b>  </a></td><td class="numi">1</td><td>1603326237286</td><td class="numi">8595</td></tr>
 </table>
 <h1>Test</h1>
 <h2 id="m1">scripts.TC1_EditUserDetails:editEmployeeDetails</h2>
 <div style="padding-left:3em">
-<h3>Test Messages</h3>
-Admin has been entered in UsernameTextBox<br/>
-admin123 has been entered in PasswordTextbox<br/>
-LoginButton has been clicked<br/>
-Mouse hovered on element PIM_Module<br/>
-employeeList_SubMenu has not been clicked <br/>
-<h3>Failure</h3>
 <p>employeeList_SubMenu has not been clicked</p>
 org.junit.Assert.fail(Assert.java:93)
-<br/>at generic.BasePage.clickOnElement(BasePage.java:83)
+<br/>at generic.BasePage.clickOnElement(BasePage.java:89)
 <br/>at pom.LoginPage.clickEmployeeListSubMenu(LoginPage.java:71)
-<br/>at scripts.TC1_EditUserDetails.editEmployeeDetails(TC1_EditUserDetails.java:46)
+<br/>at scripts.TC1_EditUserDetails.editEmployeeDetails(TC1_EditUserDetails.java:54)
 <br/>14 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">scripts.TC2_launchOrangeHRM:launchOrangeHRM</h2>
-<div style="padding-left:3em">
-Admin has been entered in UsernameTextBox<br/>
-admin123 has been entered in PasswordTextbox<br/>
-LoginButton has been clicked<br/>
-Mouse hovered on element PIM_Module<br/>
-</div>
+<h2 id="m2">scripts.TC3_forgotPassword:forgotPassword</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">scripts.TC3_forgotPassword:forgotPassword</h2>
-<div style="padding-left:3em">
-forgotPassword_Link has been clicked<br/>
-</div>
+<h2 id="m3">scripts.TC2_launchOrangeHRM:launchOrangeHRM</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

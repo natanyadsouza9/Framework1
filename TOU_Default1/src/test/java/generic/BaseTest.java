@@ -22,7 +22,7 @@ import com.aventstack.extentreports.Status;
 public class BaseTest implements AutoConst {
 	public  WebDriver driver;
 
-	public static String TestScriptName="";
+	public    String TestScriptName;
 	public static ExtentTest test;
 	public static ExtentReports extent=ExtentReporter.getReportObject();
 	public static ThreadLocal<ExtentTest> extentTest =new ThreadLocal<ExtentTest>();
@@ -96,19 +96,5 @@ public class BaseTest implements AutoConst {
 		
 	}
 	
-public File takeScreenshot1(WebDriver driver,String testcaseName) {
-		
-		TakesScreenshot ts=(TakesScreenshot)driver;
-		File source=ts.getScreenshotAs(OutputType.FILE);
-		String dest=System.getProperty("user.dir")+"\\reports\\"+testcaseName+".png";
-		try {
-			FileUtils.copyFile(source, new File(dest));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		return new File(dest);
-	}
 
 }

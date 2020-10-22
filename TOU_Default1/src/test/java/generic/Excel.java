@@ -11,7 +11,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class Excel extends BaseTest {
 	
-	public static String readData(String testdata) throws EncryptedDocumentException, InvalidFormatException, IOException{
+	public   String readData(String testdata) throws EncryptedDocumentException, InvalidFormatException, IOException{
 		
 		String path=System.getProperty("user.dir")+"\\data\\TestData.xlsx";
 		File f=new File(path);

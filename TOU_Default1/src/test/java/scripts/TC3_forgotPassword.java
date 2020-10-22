@@ -2,6 +2,8 @@ package scripts;
 
 import java.io.IOException;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.WebDriver;
@@ -16,7 +18,8 @@ import pom.LoginPage;
 
 public class TC3_forgotPassword extends BaseTest {
 	
-	
+	public static Logger log =LogManager.getLogger(TC3_forgotPassword.class.getName());
+
 	public WebDriver driver;
 
 	@Test
@@ -28,13 +31,15 @@ public class TC3_forgotPassword extends BaseTest {
 		try {
 			driver=initializeDriver();
 			extentTest.get().log(Status.INFO, "URL launched successfullly", MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"initializeDriver")).build());
+			log.info("URL launched successfully");
 
 			}
 			
 			catch(Exception e) {
 				
 				extentTest.get().log(Status.INFO, "URL not launched successfullly", MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"initializeDriver")).build());
-			
+				log.error("URL not launched successfully");
+
 			}
 		
 		LoginPage l=new LoginPage(driver);
