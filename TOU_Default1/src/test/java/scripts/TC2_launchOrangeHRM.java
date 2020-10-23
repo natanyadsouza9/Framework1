@@ -18,7 +18,7 @@ import pom.LoginPage;
 
 public class TC2_launchOrangeHRM extends BaseTest {
 
-	public static Logger log =LogManager.getLogger(TC2_launchOrangeHRM.class.getName());
+	public static Logger log2 =LogManager.getLogger(TC2_launchOrangeHRM.class.getName());
 
 	public WebDriver driver;
 	Excel excel=new Excel();
@@ -31,20 +31,20 @@ public class TC2_launchOrangeHRM extends BaseTest {
 		try {
 			driver=initializeDriver();
 			extentTest.get().log(Status.INFO, "URL launched successfullly", MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"initializeDriver")).build());
-			log.info("URL launched successfully");
+			log2.info("URL launched successfully");
 
 			}
 			
 			catch(Exception e) {
 				
 				extentTest.get().log(Status.INFO, "URL not launched successfullly", MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"initializeDriver")).build());
-				log.error("URL not launched successfully");
+				log2.error("URL not launched successfully");
 
 			}
 		
 		LoginPage l=new LoginPage(driver);
-		extentTest.get().log(Status.INFO, l.setUserName(excel.readData("Username")), MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"setUserName")).build());
-		extentTest.get().log(Status.INFO,l.setPassword(excel.readData("Password")),MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"setPassword")).build());
+		extentTest.get().log(Status.INFO, l.setUserName(excel.readData("Username","launchOrangeHRM")), MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"setUserName")).build());
+		extentTest.get().log(Status.INFO,l.setPassword(excel.readData("Password","launchOrangeHRM")),MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"setPassword")).build());
 		extentTest.get().log(Status.INFO,l.clickLoginButton(),MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"clickLoginButton")).build());
 		extentTest.get().log(Status.INFO,l.hoverOnPIM(),MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"hoverOnPIM")).build());
 	

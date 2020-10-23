@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 13.334 s <<< FAILURE! - in TestSuite
-scripts.TC1_EditUserDetails.editEmployeeDetails  Time elapsed: 12.345 s  <<< FAILURE!
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 14.3 s <<< FAILURE! - in TestSuite
+scripts.TC1_EditUserDetails.editEmployeeDetails  Time elapsed: 13.254 s  <<< FAILURE!
 java.lang.AssertionError: employeeList_SubMenu has not been clicked
-	at scripts.TC1_EditUserDetails.editEmployeeDetails(TC1_EditUserDetails.java:54)
+	at scripts.TC1_EditUserDetails.editEmployeeDetails(TC1_EditUserDetails.java:53)
 

@@ -11,12 +11,12 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class Excel extends BaseTest {
 	
-	public   String readData(String testdata) throws EncryptedDocumentException, InvalidFormatException, IOException{
+	public   String readData(String testdata,String TestScriptName ) throws EncryptedDocumentException, InvalidFormatException, IOException{
 		
 		String path=System.getProperty("user.dir")+"\\data\\TestData.xlsx";
 		File f=new File(path);
 		Workbook wb=WorkbookFactory.create(f);
-		System.out.println("Excel methid:Test case being run is "+TestScriptName);
+		System.out.println("Excel method:Test case being run is "+TestScriptName);
 		//String testData=wb.getSheet(Sheet).getRow(rowNo).getCell(columnNo).toString();
 		int lastRowNo=wb.getSheet("Sheet1").getLastRowNum();
 		int rowNoOfTestCaseRun=0;

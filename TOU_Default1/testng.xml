@@ -4,7 +4,7 @@
 	<test thread-count="3" name="Test" parallel="methods">
 		<classes>
 			<class name="scripts.TC1_EditUserDetails" />
-	 	<class name="scripts.TC2_launchOrangeHRM" />
+  	 	<class name="scripts.TC2_launchOrangeHRM" />
 			<class name="scripts.TC3_forgotPassword" />
 
 		</classes>

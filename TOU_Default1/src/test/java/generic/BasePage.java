@@ -1,5 +1,6 @@
 package generic;
 
+import java.lang.reflect.Method;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.logging.log4j.LogManager;
@@ -20,6 +21,7 @@ import com.aventstack.extentreports.Status;
 
 public class BasePage extends BaseTest {
 
+	
 	public static Logger log =LogManager.getLogger(BaseTest.class.getName());
 
 	public  WebDriver driver;

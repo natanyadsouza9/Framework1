@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.lang.reflect.Method;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -20,6 +22,8 @@ import com.aventstack.extentreports.Status;
 
 
 public class BaseTest implements AutoConst {
+	
+	
 	public  WebDriver driver;
 
 	public    String TestScriptName;
@@ -44,7 +48,7 @@ public class BaseTest implements AutoConst {
 	}
 
 	@BeforeMethod
-	public void handleTestScriptName(Method method)
+	public  void handleTestScriptName(Method method)
 	{
 		TestScriptName= method.getName(); 
 		System.out.println("Test SCript  run is "+TestScriptName);

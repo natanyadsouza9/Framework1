@@ -17,12 +17,11 @@ import com.aventstack.extentreports.markuputils.Markup;
 import generic.BasePage;
 import generic.BaseTest;
 import generic.Excel;
-import jdk.internal.org.jline.utils.Log;
 import pom.LoginPage;
 
 public class TC1_EditUserDetails extends BaseTest {
 
-	public static Logger log =LogManager.getLogger(TC1_EditUserDetails.class.getName());
+	public static Logger log1 =LogManager.getLogger(TC1_EditUserDetails.class.getName());
 
 	public WebDriver driver;
 	@Test(enabled=true)
@@ -34,21 +33,21 @@ public class TC1_EditUserDetails extends BaseTest {
 		try {
 			driver=initializeDriver();
 			extentTest.get().log(Status.INFO, "URL launched successfullly", MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"initializeDriver")).build());
-			//log.info("URL launched successfully");
+			log1.info("URL launched successfully");
 		}
 
 		catch(Exception e) {
 
 			extentTest.get().log(Status.INFO, "URL not launched successfullly", MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"initializeDriver")).build());
-			//log.error("URL not launched successfully");
+			log1.error("URL not launched successfully");
 
 
 		}
 		LoginPage l=new LoginPage(driver);
 
 
-		extentTest.get().log(Status.INFO, l.setUserName(excel.readData("Username")), MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"setUserName")).build());
-		extentTest.get().log(Status.INFO,l.setPassword(excel.readData("Password")),MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"setPassword")).build());
+		extentTest.get().log(Status.INFO, l.setUserName(excel.readData("Username","editEmployeeDetails")), MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"setUserName")).build());
+		extentTest.get().log(Status.INFO,l.setPassword(excel.readData("Password","editEmployeeDetails")),MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"setPassword")).build());
 		extentTest.get().log(Status.INFO,l.clickLoginButton(),MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"clickLoginButton")).build());
 		extentTest.get().log(Status.INFO,l.hoverOnPIM(),MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"hoverOnPIM")).build());
 		extentTest.get().log(Status.INFO,l.clickEmployeeListSubMenu(),MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"clickEmployeeListSubMenu")).build());
