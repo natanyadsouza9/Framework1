@@ -5,13 +5,13 @@
     <classes>
       <class name="scripts.TC3_forgotPassword">
         <methods>
-          <include name="closeBrowsers"/>
           <include name="handleTestScriptName"/>
           <include name="postcondition"/>
         </methods>
       </class> <!-- scripts.TC3_forgotPassword -->
       <class name="scripts.TC2_launchOrangeHRM">
         <methods>
+          <include name="launchOrangeHRM"/>
           <include name="handleTestScriptName"/>
           <include name="postcondition"/>
         </methods>
@@ -19,7 +19,6 @@
       <class name="scripts.TC1_EditUserDetails">
         <methods>
           <include name="handleTestScriptName"/>
-          <include name="editEmployeeDetails"/>
           <include name="postcondition"/>
         </methods>
       </class> <!-- scripts.TC1_EditUserDetails -->
