@@ -18,7 +18,7 @@ import pom.LoginPage;
 
 public class TC2_launchOrangeHRM extends BaseTest {
 
-	public static Logger log2 =LogManager.getLogger(TC2_launchOrangeHRM.class.getName());
+	public static Logger log =LogManager.getLogger(TC2_launchOrangeHRM.class.getName());
 
 	public WebDriver driver;
 	Excel excel=new Excel();
@@ -31,14 +31,14 @@ public class TC2_launchOrangeHRM extends BaseTest {
 		try {
 			driver=initializeDriver();
 			extentTest.get().log(Status.INFO, "URL launched successfullly", MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"initializeDriver")).build());
-			log2.info("URL launched successfully");
+			log.info("URL launched successfully");
 
 			}
 			
 			catch(Exception e) {
 				
 				extentTest.get().log(Status.INFO, "URL not launched successfullly", MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"initializeDriver")).build());
-				log2.error("URL not launched successfully");
+				log.error("URL not launched successfully");
 
 			}
 		

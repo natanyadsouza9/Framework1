@@ -14,6 +14,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -56,8 +58,8 @@ public class BaseTest implements AutoConst {
 
 	@AfterMethod
 	public void postcondition(ITestResult result){
-		//driver.close();
-		WebDriver driver =null;
+		
+		//WebDriver driver =null;
 
 		if(result.getStatus() == ITestResult.SUCCESS)
 			extentTest.get().log(Status.PASS, "Test Case Passed successfully");
@@ -81,7 +83,7 @@ public class BaseTest implements AutoConst {
 		}
 
 		extent.flush();
-
+		driver.close();
 	}
 
 	public String takeScreenshot(WebDriver driver,String testcaseName) {
@@ -99,6 +101,8 @@ public class BaseTest implements AutoConst {
 		return dest;
 		
 	}
+	
+
 	
 
 }

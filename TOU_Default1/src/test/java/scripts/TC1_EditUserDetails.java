@@ -21,7 +21,7 @@ import pom.LoginPage;
 
 public class TC1_EditUserDetails extends BaseTest {
 
-	public static Logger log1 =LogManager.getLogger(TC1_EditUserDetails.class.getName());
+	public static Logger log =LogManager.getLogger(TC1_EditUserDetails.class.getName());
 
 	public WebDriver driver;
 	@Test(enabled=true)
@@ -33,13 +33,13 @@ public class TC1_EditUserDetails extends BaseTest {
 		try {
 			driver=initializeDriver();
 			extentTest.get().log(Status.INFO, "URL launched successfullly", MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"initializeDriver")).build());
-			log1.info("URL launched successfully");
+			log.info("URL launched successfully");
 		}
 
 		catch(Exception e) {
 
 			extentTest.get().log(Status.INFO, "URL not launched successfullly", MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"initializeDriver")).build());
-			log1.error("URL not launched successfully");
+			log.error("URL not launched successfully");
 
 
 		}

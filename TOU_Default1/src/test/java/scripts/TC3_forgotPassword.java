@@ -18,7 +18,7 @@ import pom.LoginPage;
 
 public class TC3_forgotPassword extends BaseTest {
 	
-	public static Logger log3 =LogManager.getLogger(TC3_forgotPassword.class.getName());
+	public static Logger log =LogManager.getLogger(TC3_forgotPassword.class.getName());
 
 	public WebDriver driver;
 
@@ -31,14 +31,14 @@ public class TC3_forgotPassword extends BaseTest {
 		try {
 			driver=initializeDriver();
 			extentTest.get().log(Status.INFO, "URL launched successfullly", MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"initializeDriver")).build());
-			log3.info("URL launched successfully");
+			log.info("URL launched successfully");
 
 			}
 			
 			catch(Exception e) {
 				
 				extentTest.get().log(Status.INFO, "URL not launched successfullly", MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"initializeDriver")).build());
-				log3.error("URL not launched successfully");
+				log.error("URL not launched successfully");
 
 			}
 		

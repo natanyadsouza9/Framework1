@@ -5,6 +5,7 @@
     <classes>
       <class name="scripts.TC3_forgotPassword">
         <methods>
+          <include name="closeBrowsers"/>
           <include name="handleTestScriptName"/>
           <include name="postcondition"/>
         </methods>
