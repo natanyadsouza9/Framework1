@@ -1,6 +1,5 @@
 scripts\cssSelector.class
 scripts\FileUploadPopUp.class
-generic\Excel.class
 scripts\ExplicitWait.class
 scripts\WindowHandlerGuru.class
 scripts\WindowHandler.class

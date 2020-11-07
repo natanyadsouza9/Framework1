@@ -13,7 +13,6 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 
 import generic.BaseTest;
-import generic.Excel;
 import pom.LoginPage;
 
 public class TC3_forgotPassword extends BaseTest {

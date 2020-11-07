@@ -1,6 +1,7 @@
 package scripts;
 
 import java.io.IOException;
+import java.util.HashMap;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -13,7 +14,7 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 
 import generic.BaseTest;
-import generic.Excel;
+import generic.TestData;
 import pom.LoginPage;
 
 public class TC2_launchOrangeHRM extends BaseTest {
@@ -21,13 +22,14 @@ public class TC2_launchOrangeHRM extends BaseTest {
 	public static Logger log =LogManager.getLogger(TC2_launchOrangeHRM.class.getName());
 
 	public WebDriver driver;
-	Excel excel=new Excel();
 	@Test
 	public void launchOrangeHRM() throws InterruptedException, EncryptedDocumentException, InvalidFormatException, IOException {
 		
 		
 		test = extent.createTest("launchOrangeHRM");
 		extentTest.set(test);
+		HashMap<String,String> testdata=TestData.getTestData("editEmployeeDetails");
+
 		try {
 			driver=initializeDriver();
 			extentTest.get().log(Status.INFO, "URL launched successfullly", MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"initializeDriver")).build());
@@ -43,8 +45,8 @@ public class TC2_launchOrangeHRM extends BaseTest {
 			}
 		
 		LoginPage l=new LoginPage(driver);
-		extentTest.get().log(Status.INFO, l.setUserName(excel.readData("Username","launchOrangeHRM")), MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"setUserName")).build());
-		extentTest.get().log(Status.INFO,l.setPassword(excel.readData("Password","launchOrangeHRM")),MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"setPassword")).build());
+		extentTest.get().log(Status.INFO, l.setUserName(testdata.get("Username")), MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"setUserName")).build());
+		extentTest.get().log(Status.INFO,l.setPassword(testdata.get("Password")),MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"setPassword")).build());
 		extentTest.get().log(Status.INFO,l.clickLoginButton(),MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"clickLoginButton")).build());
 		extentTest.get().log(Status.INFO,l.hoverOnPIM(),MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"hoverOnPIM")).build());
 	

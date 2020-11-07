@@ -1,6 +1,7 @@
 package scripts;
 
 import java.io.IOException;
+import java.util.HashMap;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -16,7 +17,7 @@ import com.aventstack.extentreports.markuputils.Markup;
 
 import generic.BasePage;
 import generic.BaseTest;
-import generic.Excel;
+import generic.TestData;
 import pom.LoginPage;
 
 public class TC1_EditUserDetails extends BaseTest {
@@ -28,7 +29,8 @@ public class TC1_EditUserDetails extends BaseTest {
 	public void editEmployeeDetails() throws InterruptedException, EncryptedDocumentException, InvalidFormatException, IOException{
 		test = extent.createTest("editEmployeeDetails");
 		extentTest.set(test);
-		Excel excel=new Excel();
+		HashMap<String,String> testdata=TestData.getTestData("editEmployeeDetails");
+		
 
 		try {
 			driver=initializeDriver();
@@ -46,8 +48,8 @@ public class TC1_EditUserDetails extends BaseTest {
 		LoginPage l=new LoginPage(driver);
 
 
-		extentTest.get().log(Status.INFO, l.setUserName(excel.readData("Username","editEmployeeDetails")), MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"setUserName")).build());
-		extentTest.get().log(Status.INFO,l.setPassword(excel.readData("Password","editEmployeeDetails")),MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"setPassword")).build());
+		extentTest.get().log(Status.INFO, l.setUserName(testdata.get("Username")), MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"setUserName")).build());
+		extentTest.get().log(Status.INFO,l.setPassword(testdata.get("Password")),MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"setPassword")).build());
 		extentTest.get().log(Status.INFO,l.clickLoginButton(),MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"clickLoginButton")).build());
 		extentTest.get().log(Status.INFO,l.hoverOnPIM(),MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"hoverOnPIM")).build());
 		extentTest.get().log(Status.INFO,l.clickEmployeeListSubMenu(),MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"clickEmployeeListSubMenu")).build());

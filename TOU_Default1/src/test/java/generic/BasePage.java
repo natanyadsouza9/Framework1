@@ -22,7 +22,7 @@ import com.aventstack.extentreports.Status;
 public class BasePage extends BaseTest {
 
 	
-	public static Logger log =LogManager.getLogger(BaseTest.class.getName());
+	public static Logger log =LogManager.getLogger(BasePage.class.getName());
 
 	public  WebDriver driver;
 	static SoftAssert soft=new SoftAssert();
