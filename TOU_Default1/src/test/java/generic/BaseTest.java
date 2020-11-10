@@ -33,14 +33,14 @@ public class BaseTest implements AutoConst {
 	public static ExtentReports extent=ExtentReporter.getReportObject();
 	public static ThreadLocal<ExtentTest> extentTest =new ThreadLocal<ExtentTest>();
 
-	public WebDriver initializeDriver(){
+	public WebDriver initializeDriver(String URL){
 
 
 		System.setProperty(CHROME_KEY, CHROME_VALUE);
 		driver=new ChromeDriver();
 
 		
-		driver.get("https://opensource-demo.orangehrmlive.com/");
+		driver.get(URL);
 		driver.manage().window().maximize();
 		return driver;
 	

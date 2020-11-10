@@ -1,6 +1,7 @@
 package scripts;
 
 import java.io.IOException;
+import java.util.HashMap;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -13,6 +14,7 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 
 import generic.BaseTest;
+import generic.GlobalParameters;
 import pom.LoginPage;
 
 public class TC3_forgotPassword extends BaseTest {
@@ -27,8 +29,10 @@ public class TC3_forgotPassword extends BaseTest {
 		
 		test = extent.createTest("forgotPassword");
 		extentTest.set(test);
+		HashMap<String,String> globalParameters=GlobalParameters.getGlobalParameters();
+		String URL=globalParameters.get("OrangeHRM_URL");
 		try {
-			driver=initializeDriver();
+			driver=initializeDriver(URL);
 			extentTest.get().log(Status.INFO, "URL launched successfullly", MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"initializeDriver")).build());
 			log.info("URL launched successfully");
 

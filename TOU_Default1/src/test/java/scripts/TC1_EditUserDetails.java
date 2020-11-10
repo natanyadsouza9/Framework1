@@ -17,6 +17,7 @@ import com.aventstack.extentreports.markuputils.Markup;
 
 import generic.BasePage;
 import generic.BaseTest;
+import generic.GlobalParameters;
 import generic.TestData;
 import pom.LoginPage;
 
@@ -30,10 +31,12 @@ public class TC1_EditUserDetails extends BaseTest {
 		test = extent.createTest("editEmployeeDetails");
 		extentTest.set(test);
 		HashMap<String,String> testdata=TestData.getTestData("editEmployeeDetails");
-		
+		HashMap<String,String> globalParameters=GlobalParameters.getGlobalParameters();
+		String URL=globalParameters.get("OrangeHRM_URL");
+
 
 		try {
-			driver=initializeDriver();
+			driver=initializeDriver(URL);
 			extentTest.get().log(Status.INFO, "URL launched successfullly", MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(driver,"initializeDriver")).build());
 			log.info("URL launched successfully");
 		}

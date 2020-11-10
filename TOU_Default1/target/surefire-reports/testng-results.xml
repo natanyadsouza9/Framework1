@@ -2,12 +2,12 @@
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-07T22:55:10Z" name="Suite" finished-at="2020-11-07T22:55:23Z" duration-ms="12461">
+  <suite started-at="2020-11-10T19:56:56Z" name="Suite" finished-at="2020-11-10T19:57:10Z" duration-ms="13976">
     <groups>
     </groups>
-    <test started-at="2020-11-07T22:55:10Z" name="Test" finished-at="2020-11-07T22:55:23Z" duration-ms="12461">
+    <test started-at="2020-11-10T19:56:56Z" name="Test" finished-at="2020-11-10T19:57:10Z" duration-ms="13976">
       <class name="scripts.TC3_forgotPassword">
-        <test-method is-config="true" signature="handleTestScriptName(java.lang.reflect.Method)[pri:0, instance:scripts.TC3_forgotPassword@5536379e]" started-at="2020-11-07T14:55:10Z" name="handleTestScriptName" finished-at="2020-11-07T14:55:10Z" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="handleTestScriptName(java.lang.reflect.Method)[pri:0, instance:scripts.TC3_forgotPassword@5536379e]" started-at="2020-11-10T11:56:56Z" name="handleTestScriptName" finished-at="2020-11-10T11:56:56Z" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- handleTestScriptName -->
-        <test-method signature="forgotPassword()[pri:0, instance:scripts.TC3_forgotPassword@5536379e]" started-at="2020-11-07T14:55:10Z" name="forgotPassword" finished-at="2020-11-07T14:55:18Z" duration-ms="8078" status="PASS">
+        <test-method signature="forgotPassword()[pri:0, instance:scripts.TC3_forgotPassword@5536379e]" started-at="2020-11-10T11:56:56Z" name="forgotPassword" finished-at="2020-11-10T11:57:05Z" duration-ms="8981" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- forgotPassword -->
-        <test-method is-config="true" signature="postcondition(org.testng.ITestResult)[pri:0, instance:scripts.TC3_forgotPassword@5536379e]" started-at="2020-11-07T14:55:18Z" name="postcondition" finished-at="2020-11-07T14:55:19Z" duration-ms="392" status="PASS">
+        <test-method is-config="true" signature="postcondition(org.testng.ITestResult)[pri:0, instance:scripts.TC3_forgotPassword@5536379e]" started-at="2020-11-10T11:57:05Z" name="postcondition" finished-at="2020-11-10T11:57:06Z" duration-ms="459" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -35,7 +35,7 @@
         </test-method> <!-- postcondition -->
       </class> <!-- scripts.TC3_forgotPassword -->
       <class name="scripts.TC1_EditUserDetails">
-        <test-method is-config="true" signature="handleTestScriptName(java.lang.reflect.Method)[pri:0, instance:scripts.TC1_EditUserDetails@77602954]" started-at="2020-11-07T14:55:10Z" name="handleTestScriptName" finished-at="2020-11-07T14:55:10Z" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="handleTestScriptName(java.lang.reflect.Method)[pri:0, instance:scripts.TC1_EditUserDetails@77602954]" started-at="2020-11-10T11:56:56Z" name="handleTestScriptName" finished-at="2020-11-10T11:56:56Z" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -46,11 +46,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- handleTestScriptName -->
-        <test-method signature="editEmployeeDetails()[pri:0, instance:scripts.TC1_EditUserDetails@77602954]" started-at="2020-11-07T14:55:10Z" name="editEmployeeDetails" finished-at="2020-11-07T14:55:23Z" duration-ms="12382" status="PASS">
+        <test-method signature="editEmployeeDetails()[pri:0, instance:scripts.TC1_EditUserDetails@77602954]" started-at="2020-11-10T11:56:56Z" name="editEmployeeDetails" finished-at="2020-11-10T11:57:10Z" duration-ms="13900" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editEmployeeDetails -->
-        <test-method is-config="true" signature="postcondition(org.testng.ITestResult)[pri:0, instance:scripts.TC1_EditUserDetails@77602954]" started-at="2020-11-07T14:55:23Z" name="postcondition" finished-at="2020-11-07T14:55:23Z" duration-ms="62" status="PASS">
+        <test-method is-config="true" signature="postcondition(org.testng.ITestResult)[pri:0, instance:scripts.TC1_EditUserDetails@77602954]" started-at="2020-11-10T11:57:10Z" name="postcondition" finished-at="2020-11-10T11:57:10Z" duration-ms="60" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -63,7 +63,7 @@
         </test-method> <!-- postcondition -->
       </class> <!-- scripts.TC1_EditUserDetails -->
       <class name="scripts.TC2_launchOrangeHRM">
-        <test-method is-config="true" signature="handleTestScriptName(java.lang.reflect.Method)[pri:0, instance:scripts.TC2_launchOrangeHRM@64df9a61]" started-at="2020-11-07T14:55:10Z" name="handleTestScriptName" finished-at="2020-11-07T14:55:10Z" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="handleTestScriptName(java.lang.reflect.Method)[pri:0, instance:scripts.TC2_launchOrangeHRM@64df9a61]" started-at="2020-11-10T11:56:56Z" name="handleTestScriptName" finished-at="2020-11-10T11:56:56Z" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -74,11 +74,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- handleTestScriptName -->
-        <test-method signature="launchOrangeHRM()[pri:0, instance:scripts.TC2_launchOrangeHRM@64df9a61]" started-at="2020-11-07T14:55:10Z" name="launchOrangeHRM" finished-at="2020-11-07T14:55:21Z" duration-ms="10584" status="PASS">
+        <test-method signature="launchOrangeHRM()[pri:0, instance:scripts.TC2_launchOrangeHRM@64df9a61]" started-at="2020-11-10T11:56:56Z" name="launchOrangeHRM" finished-at="2020-11-10T11:57:07Z" duration-ms="11331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchOrangeHRM -->
-        <test-method is-config="true" signature="postcondition(org.testng.ITestResult)[pri:0, instance:scripts.TC2_launchOrangeHRM@64df9a61]" started-at="2020-11-07T14:55:21Z" name="postcondition" finished-at="2020-11-07T14:55:21Z" duration-ms="54" status="PASS">
+        <test-method is-config="true" signature="postcondition(org.testng.ITestResult)[pri:0, instance:scripts.TC2_launchOrangeHRM@64df9a61]" started-at="2020-11-10T11:57:08Z" name="postcondition" finished-at="2020-11-10T11:57:08Z" duration-ms="60" status="PASS">
           <params>
             <param index="0">
               <value>
